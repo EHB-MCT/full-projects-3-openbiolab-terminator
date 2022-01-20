@@ -16,5 +16,26 @@ class Steps : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val btnCamera = findViewById<Button>(R.id.btnCamera)
+        btnCamera.setOnClickListener {
+            val intent = Intent(this,Camera::class.java)
+            startActivity(intent)
+        }
+
+        val btnAccount = findViewById<Button>(R.id.btnAccount)
+        btnAccount.setOnClickListener {
+
+        }
+
+        val btnSavedResults = findViewById<Button>(R.id.btnSavedResults)
+        btnSavedResults.setOnClickListener {
+
+        }
+
+        val btnMoreInfo = findViewById<Button>(R.id.btnMoreInfo)
+        btnMoreInfo.setOnClickListener {
+
+        }
+
     }
 }
