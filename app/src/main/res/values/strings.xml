@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Open-Biolab-Terminator</string>
+    <string name="app_name">Biosensores</string>
+    <string name="btnstrGetStarted">Get started</string>
 </resources>

@@ -3,6 +3,7 @@
     package="com.example.open_biolab_terminator" >
 
     <uses-feature android:name="android.hardware.camera.any" />
+
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
@@ -13,8 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OpenBiolabTerminator" >
         <activity
-            android:name=".Camera"
+            android:name=".Result"
             android:exported="false" />
+        <activity
+            android:name=".Camera"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" >

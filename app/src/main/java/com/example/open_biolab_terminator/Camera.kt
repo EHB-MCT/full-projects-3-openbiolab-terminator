@@ -4,6 +4,7 @@ package com.example.open_biolab_terminator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.util.Log
@@ -41,7 +42,11 @@ class Camera : AppCompatActivity() {
         }
 
         // Set up the listener for take photo button
-        btnImageCapture.setOnClickListener { takePhoto() }
+        btnImageCapture.setOnClickListener {
+            takePhoto()
+            val intent = Intent(this,Result::class.java)
+            startActivity(intent)
+        }
 
         outputDirectory = getOutputDirectory()
 
@@ -129,6 +134,7 @@ class Camera : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         cameraExecutor.shutdown()
+
     }
 
     companion object {

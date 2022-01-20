@@ -5,16 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class MainActivity : AppCompatActivity() {
+class Result : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        val btnGetStarted = findViewById<Button>(R.id.btnGetStarted)
-        btnGetStarted.setOnClickListener {
-            val intent = Intent(this,Steps::class.java)
-            startActivity(intent)
-        }
+        setContentView(R.layout.activity_result)
 
         val btnCamera = findViewById<Button>(R.id.btnCamera)
         btnCamera.setOnClickListener {
@@ -35,6 +29,12 @@ class MainActivity : AppCompatActivity() {
         val btnMoreInfo = findViewById<Button>(R.id.btnMoreInfo)
         btnMoreInfo.setOnClickListener {
 
+        }
+
+        val btnHomePage = findViewById<Button>(R.id.btnHomePage)
+        btnHomePage.setOnClickListener {
+            val intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
         }
     }
 }
