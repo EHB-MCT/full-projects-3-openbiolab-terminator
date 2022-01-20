@@ -18,6 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        // Add other pages in activity so that the app can navigate through the different pages
+        // Source : https://www.youtube.com/watch?v=Nq7ZqMAMEfc&amp;ab_channel=AndroidPro => 4:54
+
+        <activity android:name=".Steps"></activity>
+
     </application>
 
 </manifest>
