@@ -6,13 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/btnGetStarted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Get Started"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/btngetstarted"
+        android:width="200dp"
+        android:height="200dp">
 
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="108dp"
+        android:layout_height="78dp"
+        android:background="@drawable/camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="141dp" />
+
+    <Button
+        android:id="@+id/btnSavedResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bookmark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCamera" />
+
+    <Button
+        android:id="@+id/btnaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/account"
+        app:layout_constraintStart_toEndOf="@+id/btnCamera" />
+
+    <Button
+        android:id="@+id/btnHomePage"
+        android:layout_width="fi"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSavedResults"
+        android:background="@drawable/homepage"
+    />
+
+    <Button
+        android:id="btnMoreInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/info"
+        app:layout_constraintStart_toEndOf="@+id/btnaccount" />
 </androidx.constraintlayout.widget.ConstraintLayout>
