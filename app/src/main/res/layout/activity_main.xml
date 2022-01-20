@@ -77,15 +77,15 @@
         android:id="@+id/btnMoreInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="12dp"
         android:layout_marginBottom="4dp"
         android:background="@drawable/info"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnaccount"
+        app:layout_constraintStart_toEndOf="@+id/btnAccount"
         app:layout_constraintWidth_max="@android:dimen/app_icon_size" />
 
     <Button
-        android:id="@+id/btnaccount"
+        android:id="@+id/btnAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
