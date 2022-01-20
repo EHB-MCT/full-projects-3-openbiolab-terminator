@@ -36,5 +36,11 @@ class MainActivity : AppCompatActivity() {
         btnMoreInfo.setOnClickListener {
 
         }
+
+        val btnHomePage = findViewById<Button>(R.id.btnHomePage)
+        btnHomePage.setOnClickListener {
+            val intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
