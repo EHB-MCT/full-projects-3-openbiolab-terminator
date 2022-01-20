@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
 
         val btnCamera = findViewById<Button>(R.id.btnCamera)
         btnCamera.setOnClickListener {
-            //val intent = Intent(this,Camera::class.java)
         }
 
         val btnAccount = findViewById<Button>(R.id.btnAccount)
