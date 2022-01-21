@@ -4,7 +4,7 @@
      xmlns:tools="http://schemas.android.com/tools"
      android:layout_width="match_parent"
      android:layout_height="match_parent"
-    android:background="@color/green"
+    android:background="@drawable/background"
     tools:context=".Steps">
 
 
@@ -110,12 +110,23 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
+    <TextView
+        android:id="@+id/circlebottom"
+        android:layout_width="125dp"
+        android:layout_height="91dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCamera"
         android:layout_width="108dp"
         android:layout_height="78dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/camera"
+        android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -131,47 +142,51 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnHomePage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="4dp"
         android:background="@drawable/homepage"
+        android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnSavedResults"
         app:layout_constraintWidth_max="@android:dimen/app_icon_size" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSavedResults"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="4dp"
         android:background="@drawable/bookmark"
+        android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnCamera"
         app:layout_constraintWidth_max="@android:dimen/app_icon_size"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnaccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="4dp"
         android:background="@drawable/account"
+        android:backgroundTint="@color/black"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnCamera"
         app:layout_constraintWidth_max="@android:dimen/app_icon_size" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnMoreInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginBottom="4dp"
         android:background="@drawable/info"
+        android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnaccount"
         app:layout_constraintWidth_max="@android:dimen/app_icon_size" />
