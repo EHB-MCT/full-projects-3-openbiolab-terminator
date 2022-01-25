@@ -39,6 +39,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.camera:camera-view:1.0.0-alpha23'
     implementation 'androidx.camera:camera-lifecycle:1.1.0-alpha03'
+    implementation project(path: ':opencv')
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
