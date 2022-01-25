@@ -29,10 +29,7 @@
     "intermediatesFolder": "/Users/hiraakhtar/Documents/Multimedia/2BaMCTB (2021-2022)/Full Projects/FP III/OpenBioLab/Code/full-projects-3-openbiolab-terminator/opencv/build/intermediates/cxx/Debug/4j6ok3w3",
     "isDebuggableEnabled": true,
     "validAbiList": [
-      "ARMEABI_V7A",
-      "ARM64_V8A",
-      "X86",
-      "X86_64"
+      "X86"
     ],
     "buildTargetSet": [
       "opencv_jni_shared"
@@ -133,6 +130,7 @@
         "rootBuildGradleFolder": "/Users/hiraakhtar/Documents/Multimedia/2BaMCTB (2021-2022)/Full Projects/FP III/OpenBioLab/Code/full-projects-3-openbiolab-terminator",
         "sdkFolder": "/Users/hiraakhtar/Library/Android/sdk",
         "isBuildOnlyTargetAbiEnabled": true,
+        "ideBuildTargetAbi": "x86",
         "isCmakeBuildCohabitationEnabled": false,
         "isPrefabEnabled": false
       },
