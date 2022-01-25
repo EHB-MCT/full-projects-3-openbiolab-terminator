@@ -1,0 +1,33 @@
+{
+  "buildFiles": [
+    "/Users/hiraakhtar/Documents/Multimedia/2BaMCTB (2021-2022)/Full Projects/FP III/OpenBioLab/Code/full-projects-3-openbiolab-terminator/opencv/libcxx_helper/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/hiraakhtar/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+      "-C",
+      "/Users/hiraakhtar/Documents/Multimedia/2BaMCTB (2021-2022)/Full Projects/FP III/OpenBioLab/Code/full-projects-3-openbiolab-terminator/opencv/.cxx/Debug/4j6ok3w3/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/hiraakhtar/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-C",
+    "/Users/hiraakhtar/Documents/Multimedia/2BaMCTB (2021-2022)/Full Projects/FP III/OpenBioLab/Code/full-projects-3-openbiolab-terminator/opencv/.cxx/Debug/4j6ok3w3/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "opencv_jni_shared-Debug-x86": {
+      "artifactName": "opencv_jni_shared",
+      "buildCommandComponents": [
+        "/Users/hiraakhtar/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/hiraakhtar/Documents/Multimedia/2BaMCTB (2021-2022)/Full Projects/FP III/OpenBioLab/Code/full-projects-3-openbiolab-terminator/opencv/.cxx/Debug/4j6ok3w3/x86",
+        "opencv_jni_shared"
+      ],
+      "abi": "x86",
+      "output": "/Users/hiraakhtar/Documents/Multimedia/2BaMCTB (2021-2022)/Full Projects/FP III/OpenBioLab/Code/full-projects-3-openbiolab-terminator/opencv/.cxx/Debug/4j6ok3w3/x86/libopencv_jni_shared.a",
+      "runtimeFiles": []
+    }
+  }
+}
