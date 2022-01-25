@@ -41,7 +41,7 @@ class Camera : AppCompatActivity() {
                 this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS)
         }
 
-        // Set up the listener for take photo button
+        // Set up the listener for take photo buttonblue.xml
         btnImageCapture.setOnClickListener {
             takePhoto()
             val intent = Intent(this,Result::class.java)
