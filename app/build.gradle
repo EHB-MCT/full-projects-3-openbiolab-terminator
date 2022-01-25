@@ -2,10 +2,16 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-android-extensions'
+    id 'com.chaquo.python'
 }
 
 android {
     compileSdk 32
+    sourceSets {
+        main {
+            python.srcDir "src/main/python"
+        }
+    }
 
     defaultConfig {
         applicationId "com.example.open_biolab_terminator"
@@ -15,6 +21,10 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
     }
 
     buildTypes {
@@ -30,6 +40,8 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+
 }
 
 dependencies {
