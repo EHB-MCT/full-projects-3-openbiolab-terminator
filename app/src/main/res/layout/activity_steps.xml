@@ -5,8 +5,6 @@
      android:layout_width="match_parent"
      android:layout_height="match_parent"
      android:background="@drawable/backgroundsteps"
-     tools:context=".Steps"
-     android:background="@drawable/background"
      tools:context=".Steps">
 
 
@@ -39,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Determine if your water is drinkable or not"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
@@ -107,25 +105,9 @@
         android:text="You still can change the permissions in your settings"
         android:textColor="@color/black"
         android:textSize="12sp"
-        android:id="@+id/circlebottom"
-        android:layout_width="125dp"
-        android:layout_height="91dp"
-        android:layout_marginBottom="4dp"
-        android:background="@drawable/circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnCamera"
-        android:layout_width="108dp"
-        android:layout_height="78dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/camera"
-        android:backgroundTint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
 
     <TextView
         android:id="@+id/textView6"
@@ -153,53 +135,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    
-        android:id="@+id/btnHomePage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="4dp"
-        android:background="@drawable/homepage"
-        android:backgroundTint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnSavedResults"
-        app:layout_constraintWidth_max="@android:dimen/app_icon_size" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnSavedResults"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="4dp"
-        android:background="@drawable/bookmark"
-        android:backgroundTint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnCamera"
-        app:layout_constraintWidth_max="@android:dimen/app_icon_size"/>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnaccount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="4dp"
-        android:background="@drawable/account"
-        android:backgroundTint="@color/black"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnCamera"
-        app:layout_constraintWidth_max="@android:dimen/app_icon_size" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnMoreInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="4dp"
-        android:background="@drawable/info"
-        android:backgroundTint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnaccount"
-        app:layout_constraintWidth_max="@android:dimen/app_icon_size" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
