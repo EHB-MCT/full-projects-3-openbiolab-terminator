@@ -15,6 +15,7 @@
         android:layout_height="42dp"
         android:layout_marginTop="712dp"
         android:background="@drawable/buttonwhite"
+        android:fontFamily="@font/qartella_bold"
         android:text="Start analysing"
         android:textAllCaps="false"
         android:textColor="@color/black"
@@ -29,6 +30,7 @@
         android:layout_height="32dp"
         android:layout_marginBottom="28dp"
         android:gravity="center"
+        android:fontFamily="@font/qartella_regular"
         android:text="Don't show this again"
         android:textColor="#90000000"
         android:textSize="12sp"
@@ -43,6 +45,7 @@
         android:layout_height="28dp"
         android:layout_marginBottom="732dp"
         android:gravity="center"
+        android:fontFamily="@font/qartella_regular"
         android:text="Determine if your water is drinkable or not"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -56,6 +59,7 @@
         android:layout_width="259dp"
         android:layout_height="35dp"
         android:layout_marginBottom="768dp"
+        android:fontFamily="@font/qartella_bold"
         android:text="This is how it works"
         android:textColor="@color/black"
         android:textSize="28sp"
@@ -88,30 +92,32 @@
 
     <TextView
         android:id="@+id/step2"
-        android:layout_width="76dp"
+        android:layout_width="84dp"
         android:layout_height="36dp"
         android:layout_marginBottom="508dp"
+        android:fontFamily="@font/qartella_bold"
         android:text="Step 2"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/ste91"
-        android:layout_width="76dp"
+        android:layout_width="84dp"
         android:layout_height="36dp"
         android:layout_marginBottom="652dp"
+        android:fontFamily="@font/qartella_bold"
         android:text="Step 1"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -119,6 +125,7 @@
         android:layout_width="223dp"
         android:layout_height="40dp"
         android:layout_marginBottom="604dp"
+        android:fontFamily="@font/qartella_regular"
         android:text="Place the sample in a dark environment"
         android:textColor="@color/black"
         android:textSize="15sp"
@@ -129,16 +136,17 @@
 
     <TextView
         android:id="@+id/step3"
-        android:layout_width="76dp"
+        android:layout_width="85dp"
         android:layout_height="36dp"
         android:layout_marginBottom="364dp"
+        android:fontFamily="@font/qartella_bold"
         android:text="Step 3"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -146,6 +154,7 @@
         android:layout_width="221dp"
         android:layout_height="65dp"
         android:layout_marginBottom="292dp"
+        android:fontFamily="@font/qartella_regular"
         android:text="Make sure the picture is sharp
 enough by tapping on the
 pellet via the camera screen"
@@ -161,6 +170,7 @@ pellet via the camera screen"
         android:layout_width="223dp"
         android:layout_height="40dp"
         android:layout_marginBottom="460dp"
+        android:fontFamily="@font/qartella_regular"
         android:text="Make sure the sample is centered on your camera"
         android:textColor="@color/black"
         android:textSize="15sp"
@@ -174,6 +184,7 @@ pellet via the camera screen"
         android:layout_width="223dp"
         android:layout_height="40dp"
         android:layout_marginBottom="172dp"
+        android:fontFamily="@font/qartella_regular"
         android:text="Hold the camera still and take
 the picture with flash"
         android:textColor="@color/black"
@@ -185,16 +196,17 @@ the picture with flash"
 
     <TextView
         android:id="@+id/step4"
-        android:layout_width="76dp"
+        android:layout_width="85dp"
         android:layout_height="36dp"
         android:layout_marginBottom="220dp"
+        android:fontFamily="@font/qartella_bold"
         android:text="Step 4"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView

@@ -5,57 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/ic_background_waves2">
+    android:background="@drawable/ic_background_wave4">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
-        android:fontFamily="@font/qartella_bold"
-        android:text="Your results"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.087"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="196dp"
-        android:fontFamily="@font/qartella_bold"
-        android:text="@string/pic_result"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.061"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/bluerect"
-        android:layout_width="394dp"
-        android:layout_height="555dp"
-        android:layout_marginBottom="4dp"
-        android:background="@drawable/rectangleround"
-        android:backgroundTint="#3466C6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <!--    bottom nav-->
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/qartella_bold"
+        android:text="More about us"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/whiterect"
-        android:layout_width="330dp"
-        android:layout_height="245dp"
-        android:layout_marginBottom="144dp"
+        android:layout_width="328dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="464dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -64,29 +38,79 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
+        android:id="@+id/whiterect3"
+        android:layout_width="328dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="268dp"
+        android:background="@drawable/rectangleround"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/whiterect2"
+        android:layout_width="328dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="368dp"
+        android:background="@drawable/rectangleround"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="312dp"
-        android:fontFamily="@font/qartella_bold"
-        android:text="Save results"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.133"
+        android:layout_marginTop="176dp"
+        android:fontFamily="@font/qartella_regular"
+        android:text="Who are we?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtTestValue"
-        android:layout_width="326dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="360dp"
+        android:id="@+id/textView14"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="208dp"
         android:fontFamily="@font/qartella_regular"
-        android:text="@string/otomatcly"
-        android:textColor="@color/white"
+        android:text="@string/whoarewe"
+        android:textColor="@color/black"
         android:textSize="12sp"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="508dp"
+        android:fontFamily="@font/qartella_regular"
+        android:text="How does it work?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="408dp"
+        android:fontFamily="@font/qartella_regular"
+        android:text="What do we do and why?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

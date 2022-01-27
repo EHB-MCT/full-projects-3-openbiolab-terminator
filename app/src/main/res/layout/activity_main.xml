@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="172dp"
+        android:fontFamily="@font/qartella_bold"
         android:text="Biosensores"
         android:textAllCaps="true"
         android:textColor="@color/white"

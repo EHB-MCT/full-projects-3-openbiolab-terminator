@@ -9,10 +9,11 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="222dp"
+        android:layout_width="230dp"
         android:layout_height="45dp"
         android:layout_marginBottom="676dp"
         android:text="First, some steps"
+        android:fontFamily="@font/qartella_bold"
         android:textColor="@color/black"
         android:textSize="28sp"
         android:textStyle="bold"
@@ -28,6 +29,7 @@
         android:layout_marginBottom="288dp"
         android:gravity="center"
         android:text="We need your location to give you a better experience."
+        android:fontFamily="@font/qartella_regular"
         android:textColor="@color/black"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,10 +39,11 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="318dp"
+        android:layout_width="350dp"
         android:layout_height="38dp"
         android:layout_marginBottom="328dp"
         android:text="Give access to your location"
+        android:fontFamily="@font/qartella_bold"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -51,10 +54,10 @@
 
     <TextView
         android:id="@+id/imagePlaceholder"
-        android:layout_width="200dp"
+        android:layout_width="300dp"
         android:layout_height="200dp"
         android:layout_marginBottom="424dp"
-        android:background="@drawable/imageplaceholder"
+        android:background="@drawable/location_illustration"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -66,6 +69,7 @@
         android:layout_height="31dp"
         android:layout_marginBottom="148dp"
         android:gravity="center"
+        android:fontFamily="@font/qartella_regular"
         android:text="You still can change the permissions in your settings"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -75,9 +79,10 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="46dp"
+        android:layout_width="50dp"
         android:layout_height="18dp"
         android:layout_marginBottom="80dp"
+        android:fontFamily="@font/qartella_regular"
         android:text="Not now"
         android:textColor="#486292"
         android:textSize="12sp"
@@ -92,6 +97,7 @@
         android:layout_height="42dp"
         android:layout_marginTop="680dp"
         android:background="@drawable/buttonblue"
+        android:fontFamily="@font/qartella_bold"
         android:text="Allow"
         android:textAllCaps="false"
         android:textColor="@color/white"

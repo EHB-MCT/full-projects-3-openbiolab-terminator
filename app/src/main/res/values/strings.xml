@@ -7,4 +7,7 @@
     <string name="pic_result">"result"</string>
     <string name="result_date">Date: </string>
     <string name="result_addy">Address:</string>
+    <string name="whoarewe">We are a scientific organization based in Peru called Proyecto Biosensores. Together with scientists and students we try to help local people in Peru with their living conditions and make them aware of the health risks involved in heavy metal pollution concerning their water etc.</string>
+    <string name="whatdowedo">The Biosensors project is based on the use of biological markers with the use of synthetic biology for the detection of heavy metals in water and the environment. The objectives of the project are to raise awareness about heavy metal pollution, improve science education, make local people aware of the health risks in their surroundings and improve the perception of science and biotechnology.</string>
+    <string name="howdoesitwork">With the combination of a repressor and a reporter gene. In the absence of Hg, the expression of the reporter is blocked, hence the E.coli cell pellet remains white.In the presence of Hg, the reporter will be expressed, resulting in a blue E.coli cell pellet,detectable by the naked eye.In other words, if there is a form of metal in the water the pellet will have a blue color detectable by the naked eye, otherwise it stays white (or transparent) meaning the water is clear</string>
 </resources>
