@@ -4,11 +4,15 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 
 class Result : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
+        val textTestValue = findViewById<TextView>(R.id.txtTestValue)
+        val BGR_Value = intent.extras!!.getString("BGR_Value")
+        textTestValue.setText(BGR_Value)
 
         val btnCamera = findViewById<Button>(R.id.btnCamera)
         btnCamera.setOnClickListener {
