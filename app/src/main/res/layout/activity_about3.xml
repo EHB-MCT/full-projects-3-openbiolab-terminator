@@ -77,7 +77,7 @@
 
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="300"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="308dp"
         android:fontFamily="@font/qartella_regular"
@@ -117,7 +117,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnImageCapture"
+        android:id="@+id/camera"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginBottom="4dp"
