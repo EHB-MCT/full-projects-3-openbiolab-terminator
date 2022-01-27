@@ -6,13 +6,22 @@ import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
+import android.widget.TextView
 
-class Info : AppCompatActivity() {
+class About : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_about)
+
+        /*
+        *
+        *
+        *   ADD BACK BUTTONS TO ALL ABOUT PAGES
+        *
+        *
+        * */
 
         /* Home Button */
         /* Gets button id */
@@ -43,6 +52,48 @@ class Info : AppCompatActivity() {
         val btnProfile = findViewById<Button>(R.id.profile)
         btnProfile.setOnClickListener {
             val intent = Intent(this,Result::class.java)
+            startActivity(intent)
+        }
+
+        /* Button to about who */
+        val btnWho = findViewById<TextView>(R.id.whoTextButton)
+        btnWho.setOnClickListener {
+            val intent = Intent(this,About2::class.java)
+            startActivity(intent)
+        }
+
+        /* Button to about who */
+        val btnWhoB = findViewById<TextView>(R.id.whoButton)
+        btnWhoB.setOnClickListener {
+            val intent = Intent(this,About2::class.java)
+            startActivity(intent)
+        }
+
+        /* Button to about what */
+        val btnWhat = findViewById<TextView>(R.id.whatTextButton)
+        btnWhat.setOnClickListener {
+            val intent = Intent(this,About3::class.java)
+            startActivity(intent)
+        }
+
+        /* Button to about what */
+        val btnWhatB = findViewById<TextView>(R.id.whatButton)
+        btnWhatB.setOnClickListener {
+            val intent = Intent(this,About3::class.java)
+            startActivity(intent)
+        }
+
+        /* Button to about how */
+        val btnHow = findViewById<TextView>(R.id.howTextButton)
+        btnHow.setOnClickListener {
+            val intent = Intent(this,About4::class.java)
+            startActivity(intent)
+        }
+
+        /* Button to about how */
+        val btnHowB = findViewById<TextView>(R.id.howTextButton)
+        btnHowB.setOnClickListener {
+            val intent = Intent(this,About4::class.java)
             startActivity(intent)
         }
 

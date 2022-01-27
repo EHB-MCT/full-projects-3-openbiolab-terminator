@@ -33,12 +33,13 @@ class MainActivity : AppCompatActivity() {
 
         val btnSavedResults = findViewById<Button>(R.id.boomark)
         btnSavedResults.setOnClickListener {
-
+            val intent = Intent(this,Data::class.java)
+            startActivity(intent)
         }
 
         val btnMoreInfo = findViewById<Button>(R.id.info)
         btnMoreInfo.setOnClickListener {
-            val intent = Intent(this,Info::class.java)
+            val intent = Intent(this,About::class.java)
             startActivity(intent)
         }
     }

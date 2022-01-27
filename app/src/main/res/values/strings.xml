@@ -4,7 +4,7 @@
     <string name="loginpage_signup">Don\'t have an account yet? <u>Sign Up!</u></string>
     <string name="signuppage_login">Already have an account? <u>Login!</u></string>
     <string name="otomatcly">Your results are automatically saved locally, however we advise you to also save your results to the database!</string>
-    <string name="pic_result">"result"</string>
+    <string name="pic_result">"result" </string>
     <string name="result_date">Date: </string>
     <string name="result_addy">Address:</string>
     <string name="whoarewe">We are a scientific organization based in Peru called Proyecto Biosensores. Together with scientists and students we try to help local people in Peru with their living conditions and make them aware of the health risks involved in heavy metal pollution concerning their water etc.</string>

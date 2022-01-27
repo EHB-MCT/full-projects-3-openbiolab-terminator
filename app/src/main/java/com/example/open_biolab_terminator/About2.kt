@@ -6,14 +6,14 @@ import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
+import android.widget.TextView
 
-class Result : AppCompatActivity() {
+class About2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_result)
-
+        setContentView(R.layout.activity_about2)
 
         /* Home Button */
         /* Gets button id */
@@ -47,12 +47,6 @@ class Result : AppCompatActivity() {
             startActivity(intent)
         }
 
-        /* About Button */
-        val btnMoreInfo = findViewById<Button>(R.id.info)
-        btnMoreInfo.setOnClickListener {
-            val intent = Intent(this,About::class.java)
-            startActivity(intent)
-        }
 
     }
 }

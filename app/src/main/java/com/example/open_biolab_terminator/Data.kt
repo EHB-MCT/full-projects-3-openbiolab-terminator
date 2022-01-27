@@ -7,13 +7,12 @@ import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
 
-class Result : AppCompatActivity() {
+class Data : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_result)
-
+        setContentView(R.layout.activity_datapage)
 
         /* Home Button */
         /* Gets button id */
@@ -22,13 +21,6 @@ class Result : AppCompatActivity() {
         btnHomePage.setOnClickListener {
             /* Takes you to other page once event (click) has happend */
             val intent = Intent(this,MainActivity::class.java)
-            startActivity(intent)
-        }
-
-        /* Bookmark Button */
-        val btnBookmark = findViewById<Button>(R.id.boomark)
-        btnBookmark.setOnClickListener {
-            val intent = Intent(this,Data::class.java)
             startActivity(intent)
         }
 
