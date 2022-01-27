@@ -10,13 +10,13 @@ class Steps : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_steps)
 
-        val btnHomePage = findViewById<Button>(R.id.btnHomePage)
+        val btnHomePage = findViewById<Button>(R.id.home)
         btnHomePage.setOnClickListener {
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
 
-        val btnCamera = findViewById<Button>(R.id.btnCamera)
+        val btnCamera = findViewById<Button>(R.id.camera)
         btnCamera.setOnClickListener {
             val intent = Intent(this,Camera::class.java)
             startActivity(intent)

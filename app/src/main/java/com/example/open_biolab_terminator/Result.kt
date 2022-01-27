@@ -10,28 +10,28 @@ class Result : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
-        val btnCamera = findViewById<Button>(R.id.btnCamera)
+        val btnCamera = findViewById<Button>(R.id.camera)
         btnCamera.setOnClickListener {
             val intent = Intent(this,Camera::class.java)
             startActivity(intent)
         }
 
-        val btnAccount = findViewById<Button>(R.id.btnAccount)
+        val btnAccount = findViewById<Button>(R.id.profile)
         btnAccount.setOnClickListener {
 
         }
 
-        val btnSavedResults = findViewById<Button>(R.id.btnSavedResults)
+        val btnSavedResults = findViewById<Button>(R.id.boomark)
         btnSavedResults.setOnClickListener {
 
         }
 
-        val btnMoreInfo = findViewById<Button>(R.id.btnMoreInfo)
+        val btnMoreInfo = findViewById<Button>(R.id.info)
         btnMoreInfo.setOnClickListener {
 
         }
 
-        val btnHomePage = findViewById<Button>(R.id.btnHomePage)
+        val btnHomePage = findViewById<Button>(R.id.home)
         btnHomePage.setOnClickListener {
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
