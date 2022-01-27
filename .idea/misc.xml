@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/niko-/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/Open-Biolab/android app/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3728205128205128" />
+        <entry key="..\:/Users/niko-/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/Open-Biolab/android app/app/src/main/res/drawable/bookmark.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/niko-/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/Open-Biolab/android app/app/src/main/res/drawable/btngetstarted.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/niko-/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/Open-Biolab/android app/app/src/main/res/drawable/camera.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/niko-/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/Open-Biolab/android app/app/src/main/res/drawable/camerashutter.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/niko-/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/Open-Biolab/android app/app/src/main/res/drawable/homepage.xml" value="0.3728205128205128" />
+        <entry key="..\:/Users/niko-/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/Open-Biolab/android app/app/src/main/res/drawable/ic_launcher_background.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/niko-/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/Open-Biolab/android app/app/src/main/res/drawable/info.xml" value="0.3728205128205128" />
+        <entry key="..\:/Users/niko-/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/Open-Biolab/android app/app/src/main/res/drawable/rectangle.xml" value="0.21875" />
+        <entry key="..\:/Users/niko-/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/Open-Biolab/android app/app/src/main/res/drawable/rectanglebottom.xml" value="0.21875" />
+        <entry key="..\:/Users/niko-/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/Open-Biolab/android app/app/src/main/res/drawable/rectangletop.xml" value="0.21875" />
+        <entry key="..\:/Users/niko-/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/Open-Biolab/android app/app/src/main/res/drawable/rounded_button.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/niko-/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/Open-Biolab/android app/app/src/main/res/layout/activity_camera.xml" value="0.33" />
+        <entry key="..\:/Users/niko-/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/Open-Biolab/android app/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/niko-/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/Open-Biolab/android app/app/src/main/res/layout/activity_steps.xml" value="0.3625" />
+        <entry key="..\:/Users/niko-/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/Open-Biolab/android app/app/src/main/res/layout/all_steps.xml" value="0.3625" />
+        <entry key="..\:/Users/niko/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/App/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_camera.xml" value="0.55" />
+        <entry key="..\:/Users/niko/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/App/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_main.xml" value="0.55" />
+        <entry key="..\:/Users/niko/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/App/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_result.xml" value="0.55" />
+        <entry key="..\:/Users/niko/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/App/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_steps.xml" value="0.328125" />
+        <entry key="..\:/Users/niko/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/App/full-projects-3-openbiolab-terminator/app/src/main/res/layout/result.xml" value="0.55" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/account.xml" value="0.3828125" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/background.xml" value="0.3828125" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/backgroundsteps.xml" value="0.3223684210526316" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/bookmark.xml" value="0.3828125" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/btngetstarted.xml" value="0.3828125" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/button.xml" value="0.3828125" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/buttonblue.xml" value="0.3223684210526316" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/buttonwhite.xml" value="0.3828125" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/camera.xml" value="0.3828125" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/camerabutton.xml" value="0.3828125" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/camerashutter.xml" value="0.3828125" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/circle.xml" value="0.3828125" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/homeicon.xml" value="0.3828125" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/imageplaceholder.xml" value="0.3828125" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/info.xml" value="0.3828125" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/splashscreen.xml" value="0.3828125" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_camera.xml" value="0.25" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_instructions.xml" value="0.25" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_result.xml" value="0.25" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_signup.xml" value="0.33" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_splash.xml" value="0.22" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_steps.xml" value="0.33" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_steps2.xml" value="0.22" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_steps3.xml" value="0.25" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/all_steps.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
