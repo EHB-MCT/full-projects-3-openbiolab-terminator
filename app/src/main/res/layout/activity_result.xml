@@ -11,9 +11,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:fontFamily="@font/qartella_bold"
-
         android:layout_marginTop="120dp"
         android:fontFamily="@font/qartella_bold"
         android:text="Your results"
@@ -71,10 +68,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="312dp"
-
-        android:fontFamily="@font/qartella_bold"
-
-        android:layout_marginTop="280dp"
         android:fontFamily="@font/qartella_bold"
         android:text="Save results"
         android:textColor="@color/white"
