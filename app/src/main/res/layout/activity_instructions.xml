@@ -70,17 +70,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/imagePlaceholder1"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginBottom="612dp"
-        android:background="@drawable/imageplaceholder"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
         android:id="@+id/step4"
         android:layout_width="85dp"
         android:layout_height="36dp"
@@ -93,28 +82,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/imagePlaceholder3"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginBottom="324dp"
-        android:background="@drawable/imageplaceholder"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/imagePlaceholder4"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginBottom="180dp"
-        android:background="@drawable/imageplaceholder"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -222,11 +189,44 @@ pellet via the camera screen"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/imagePlaceholder2"
+        android:id="@+id/imgstep2"
         android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginBottom="468dp"
-        android:background="@drawable/imageplaceholder"
+        android:layout_height="140dp"
+        android:layout_marginBottom="464dp"
+        android:background="@drawable/ic_step2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/imgstep1"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="608dp"
+        android:background="@drawable/ic_step1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/imgstep3"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="320dp"
+        android:background="@drawable/ic_step3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/imgstep4"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="176dp"
+        android:background="@drawable/ic_step4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.096"
