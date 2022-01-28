@@ -14,29 +14,27 @@ class MainActivity : AppCompatActivity() {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main)
 
+        /* Goes to steps */
         val btnGetStarted = findViewById<Button>(R.id.camerahome)
         btnGetStarted.setOnClickListener {
             val intent = Intent(this,Steps::class.java)
             startActivity(intent)
         }
 
-        val btnCamera = findViewById<Button>(R.id.camerahome)
-        btnCamera.setOnClickListener {
-            val intent = Intent(this,Camera::class.java)
-            startActivity(intent)
-        }
-
+        /* Goes to Profile */
         val btnAccount = findViewById<Button>(R.id.profile)
         btnAccount.setOnClickListener {
 
         }
 
+        /* Goes to Saved Results */
         val btnSavedResults = findViewById<Button>(R.id.boomark)
         btnSavedResults.setOnClickListener {
             val intent = Intent(this,Data::class.java)
             startActivity(intent)
         }
 
+        /* Goes to About */
         val btnMoreInfo = findViewById<Button>(R.id.info)
         btnMoreInfo.setOnClickListener {
             val intent = Intent(this,About::class.java)

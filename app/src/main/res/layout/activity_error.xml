@@ -43,7 +43,6 @@
         android:id="@+id/button2"
         android:layout_width="293dp"
         android:layout_height="42dp"
-        android:layout_marginTop="620dp"
         android:background="@drawable/buttonwhite"
         android:fontFamily="@font/qartella_bold"
         android:text="Try again"
@@ -51,9 +50,11 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/camera"
@@ -73,59 +74,49 @@
         android:id="@+id/boomark"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginTop="780dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/bookmark"
         android:backgroundTint="#384C71"
-        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toRightOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/info"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginTop="780dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/info"
         android:backgroundTint="#384C71"
-        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toRightOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/profile"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginTop="780dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/account"
         android:backgroundTint="#384C71"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.73"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toRightOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/home"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginTop="780dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/homeicon"
         android:backgroundTint="#384C71"
-        app:layout_constraintHorizontal_bias="0.093"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-        android:id="@+id/imagePlaceholder"
-        android:layout_width="394dp"
-        android:layout_height="60dp"
-        android:background="@drawable/rectangle"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

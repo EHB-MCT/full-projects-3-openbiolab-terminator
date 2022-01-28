@@ -16,9 +16,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OpenBiolabTerminator">
         <activity
-            android:name=".About5"
-            android:exported="false" />
-        <activity
             android:name=".Result"
             android:exported="false" />
         <activity
