@@ -21,7 +21,7 @@ android {
             abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
         }
         python{
-            buildPython "C:/Users/niko/AppData/Local/Programs/Python/Python310/python.exe"
+
             pip{
                 install "opencv-python"
             }
