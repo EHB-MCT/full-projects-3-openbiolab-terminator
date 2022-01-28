@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val btnCamera = findViewById<Button>(R.id.camera)
+        val btnCamera = findViewById<Button>(R.id.camerahome)
         btnCamera.setOnClickListener {
             val intent = Intent(this,Camera::class.java)
             startActivity(intent)

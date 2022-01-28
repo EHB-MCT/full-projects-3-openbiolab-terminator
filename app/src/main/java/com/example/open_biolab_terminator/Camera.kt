@@ -1,6 +1,5 @@
 package com.example.open_biolab_terminator
 
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.Manifest
@@ -8,23 +7,27 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.util.Log
+import android.widget.TextView
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import java.util.concurrent.Executors
 import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
+import com.chaquo.python.PyObject
+import com.chaquo.python.Python
+import com.chaquo.python.android.AndroidPlatform
 import kotlinx.android.synthetic.main.activity_camera.*
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_result.*
 import java.io.File
-import java.nio.ByteBuffer
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.ExecutorService
-typealias LumaListener = (luma: Double) -> Unit
+
 
 class Camera : AppCompatActivity() {
     private var imageCapture: ImageCapture? = null
+    private var BGR_Value:String = ""
 
     private lateinit var outputDirectory: File
     private lateinit var cameraExecutor: ExecutorService
@@ -41,11 +44,12 @@ class Camera : AppCompatActivity() {
                 this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS)
         }
 
-        // Set up the listener for take photo buttonblue.xml
+        // Set up the listener for take photo button
         btnImageCapture.setOnClickListener {
             takePhoto()
-            val intent = Intent(this,Result::class.java)
-            startActivity(intent)
+            //val intent = Intent(this, Result::class.java)
+            //intent.putExtra("BGR_Value", BGR_Value)
+            //startActivity(intent)
         }
 
         outputDirectory = getOutputDirectory()
@@ -73,12 +77,23 @@ class Camera : AppCompatActivity() {
                 override fun onError(exc: ImageCaptureException) {
                     Log.e(TAG, "Photo capture failed: ${exc.message}", exc)
                 }
-
-                override fun onImageSaved(output: ImageCapture.OutputFileResults) {
+                override fun  onImageSaved(output: ImageCapture.OutputFileResults){
                     val savedUri = Uri.fromFile(photoFile)
-                    val msg = "Photo capture succeeded: $savedUri"
+                    print(savedUri.path)
+                    if (! Python.isStarted()) {
+                        Python.start( AndroidPlatform(applicationContext))
+                    }
+                    val py = Python.getInstance()
+                    val pyObj = py.getModule("color-detection")
+                    val obj = pyObj.callAttr("colorDetection", savedUri.path)
+                    print(obj)
+                    val msg = "bgr value: $obj"
+                    //"Photo capture succeeded: $savedUri "
                     Toast.makeText(baseContext, msg, Toast.LENGTH_SHORT).show()
                     Log.d(TAG, msg)
+                    val textTestValue = findViewById<TextView>(R.id.txtTestValue)
+                    BGR_Value = obj.toString()
+
                 }
             })
 
@@ -134,7 +149,6 @@ class Camera : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         cameraExecutor.shutdown()
-
     }
 
     companion object {
@@ -147,6 +161,7 @@ class Camera : AppCompatActivity() {
     override fun onRequestPermissionsResult(
         requestCode: Int, permissions: Array<String>, grantResults:
         IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         if (requestCode == REQUEST_CODE_PERMISSIONS) {
             if (allPermissionsGranted()) {
                 startCamera()

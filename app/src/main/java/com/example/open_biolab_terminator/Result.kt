@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
+import android.widget.TextView
 
 class Result : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,6 +14,9 @@ class Result : AppCompatActivity() {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_result)
+        val textTestValue = findViewById<TextView>(R.id.txtTestValue)
+        val BGR_Value = intent.extras!!.getString("BGR_Value")
+        textTestValue.setText(BGR_Value)
 
 
         /* Home Button */
