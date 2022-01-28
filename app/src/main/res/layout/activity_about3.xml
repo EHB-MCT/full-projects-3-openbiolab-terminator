@@ -10,6 +10,17 @@
 
     <!--    bottom nav-->
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backbutton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/backbtn"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
@@ -19,7 +30,6 @@
         android:text="More about us"
         android:textAllCaps="true"
         android:textColor="@color/black"
-
         android:textSize="25sp"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"

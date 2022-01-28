@@ -40,13 +40,17 @@ class About4 : AppCompatActivity() {
         }
 
         /* Profile Button */
-        /* CHANGE THIS,RESULT TO NEW PROFILE PAGE */
         val btnProfile = findViewById<Button>(R.id.profile)
         btnProfile.setOnClickListener {
-            val intent = Intent(this,Result::class.java)
+            val intent = Intent(this,Profile::class.java)
             startActivity(intent)
         }
 
-
+        /* back Button */
+        val btnBack = findViewById<Button>(R.id.backbutton)
+        btnBack.setOnClickListener {
+            val intent = Intent(this,About::class.java)
+            startActivity(intent)
+        }
     }
 }

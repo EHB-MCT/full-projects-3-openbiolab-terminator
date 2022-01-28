@@ -6,18 +6,13 @@ import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
-import android.widget.TextView
 
-class Result : AppCompatActivity() {
+class Profile : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_result)
-        val textTestValue = findViewById<TextView>(R.id.txtTestValue)
-        val BGR_Value = intent.extras!!.getString("BGR_Value")
-        textTestValue.setText(BGR_Value)
-
+        setContentView(R.layout.activity_datapage)
 
         /* Home Button */
         /* Gets button id */
@@ -29,13 +24,6 @@ class Result : AppCompatActivity() {
             startActivity(intent)
         }
 
-        /* Bookmark Button */
-        val btnBookmark = findViewById<Button>(R.id.boomark)
-        btnBookmark.setOnClickListener {
-            val intent = Intent(this,Data::class.java)
-            startActivity(intent)
-        }
-
         /* Camera Button */
         val btnCamera = findViewById<Button>(R.id.camera)
         btnCamera.setOnClickListener {
@@ -43,10 +31,10 @@ class Result : AppCompatActivity() {
             startActivity(intent)
         }
 
-        /* Profile Button */
-        val btnProfile = findViewById<Button>(R.id.profile)
-        btnProfile.setOnClickListener {
-            val intent = Intent(this,Profile::class.java)
+        /* Bookmark Button */
+        val btnBookmark = findViewById<Button>(R.id.boomark)
+        btnBookmark.setOnClickListener {
+            val intent = Intent(this,Data::class.java)
             startActivity(intent)
         }
 
