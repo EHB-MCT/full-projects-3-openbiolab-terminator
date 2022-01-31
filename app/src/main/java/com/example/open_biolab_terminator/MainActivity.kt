@@ -40,6 +40,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,About::class.java)
             startActivity(intent)
         }
-        
+
     }
 }
