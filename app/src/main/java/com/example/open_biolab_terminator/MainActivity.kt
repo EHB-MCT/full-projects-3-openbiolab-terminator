@@ -46,7 +46,12 @@ class MainActivity : AppCompatActivity() {
 
 
         }
-        
+        //Check if the user is already signed in
+        val acct = GoogleSignIn.getLastSignedInAccount(this)
+        if (acct != null) {
+            val intent = Intent(this,Homepage::class.java)
+            startActivity(intent)
+        }
     }
 
 }
