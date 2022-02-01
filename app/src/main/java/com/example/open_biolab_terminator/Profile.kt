@@ -32,13 +32,22 @@ class Profile : AppCompatActivity() {
         val email = findViewById<TextView>(R.id.email)
         val loginText = findViewById<TextView>(R.id.login)
         val logout = findViewById<TextView>(R.id.logout)
+        val deleteAcc = findViewById<TextView>(R.id.dltAcc)
+        val confirm = findViewById<TextView>(R.id.confirmDlt)
+        val yes = findViewById<Button>(R.id.yes)
+        val no = findViewById<Button>(R.id.no)
 
 
         name.visibility = View.GONE
         email.visibility = View.GONE
         logout.visibility = View.GONE
+        deleteAcc.visibility = View.GONE
         sign_in_button.visibility = View.VISIBLE
         loginText.visibility = View.VISIBLE
+        confirm.visibility = View.GONE
+        yes.visibility = View.GONE
+        no.visibility = View.GONE
+
 
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -65,6 +74,10 @@ class Profile : AppCompatActivity() {
             sign_in_button.visibility = View.GONE
             loginText.visibility = View.GONE
             logout.visibility = View.VISIBLE
+            deleteAcc.visibility = View.VISIBLE
+            confirm.visibility = View.GONE
+            yes.visibility = View.GONE
+            no.visibility = View.GONE
 
         }
 
@@ -78,10 +91,57 @@ class Profile : AppCompatActivity() {
                     name.visibility = View.GONE
                     email.visibility = View.GONE
                     logout.visibility = View.GONE
+                    deleteAcc.visibility = View.GONE
                     sign_in_button.visibility = View.VISIBLE
                     loginText.visibility = View.VISIBLE
+                    deleteAcc.visibility = View.GONE
+                    confirm.visibility = View.GONE
+                    yes.visibility = View.GONE
+                    no.visibility = View.GONE
 
                 })
+        }
+
+
+        // Delete account
+        deleteAcc.setOnClickListener {
+            confirm.visibility = View.VISIBLE
+            yes.visibility = View.VISIBLE
+            no.visibility = View.VISIBLE
+            sign_in_button.visibility = View.GONE
+            loginText.visibility = View.GONE
+            deleteAcc.visibility = View.GONE
+            logout.visibility = View.GONE
+        }
+
+        yes.setOnClickListener {
+            mGoogleSignInClient.revokeAccess()
+                .addOnCompleteListener(this) {
+
+                    Toast.makeText(this, "Account deleted", Toast.LENGTH_SHORT).show()
+
+                    name.visibility = View.GONE
+                    email.visibility = View.GONE
+                    logout.visibility = View.GONE
+                    deleteAcc.visibility = View.GONE
+                    sign_in_button.visibility = View.VISIBLE
+                    loginText.visibility = View.VISIBLE
+                    confirm.visibility = View.GONE
+                    yes.visibility = View.GONE
+                    no.visibility = View.GONE
+                }
+        }
+
+        no.setOnClickListener {
+            name.visibility = View.VISIBLE
+            email.visibility = View.VISIBLE
+            sign_in_button.visibility = View.GONE
+            loginText.visibility = View.GONE
+            logout.visibility = View.VISIBLE
+            deleteAcc.visibility = View.VISIBLE
+            confirm.visibility = View.GONE
+            yes.visibility = View.GONE
+            no.visibility = View.GONE
         }
 
 
@@ -137,6 +197,10 @@ class Profile : AppCompatActivity() {
         val email = findViewById<TextView>(R.id.email)
         val loginText = findViewById<TextView>(R.id.login)
         val logout = findViewById<TextView>(R.id.logout)
+        val deleteAcc = findViewById<TextView>(R.id.dltAcc)
+        val confirm = findViewById<TextView>(R.id.confirmDlt)
+        val yes = findViewById<Button>(R.id.yes)
+        val no = findViewById<Button>(R.id.no)
 
 
 
@@ -150,8 +214,10 @@ class Profile : AppCompatActivity() {
             sign_in_button.visibility = View.GONE
             loginText.visibility = View.GONE
             logout.visibility = View.VISIBLE
-
-
+            deleteAcc.visibility = View.VISIBLE
+            confirm.visibility = View.GONE
+            yes.visibility = View.GONE
+            no.visibility = View.GONE
 
 
 
@@ -159,7 +225,7 @@ class Profile : AppCompatActivity() {
             // The ApiException status code indicates the detailed failure reason.
             // Please refer to the GoogleSignInStatusCodes class reference for more information.
 
-            Toast.makeText(this, "Unvalid data", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Invalid data", Toast.LENGTH_SHORT).show()
 
         }
     }

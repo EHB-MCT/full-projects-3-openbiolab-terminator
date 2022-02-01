@@ -71,9 +71,9 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="32dp"
         android:textColor="@color/black"
+        android:fontFamily="@font/qartella_bold"
         android:text="Name:"
         android:textSize="15sp"
-        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/whiterect"
         app:layout_constraintTop_toTopOf="@+id/whiterect" />
 
@@ -83,6 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:textColor="@color/black"
+        android:fontFamily="@font/qartella_regular"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="@+id/whiterect"
         app:layout_constraintHorizontal_bias="0.285"
@@ -94,6 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
+        android:fontFamily="@font/qartella_regular"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="@+id/whiterect"
         app:layout_constraintEnd_toEndOf="@+id/whiterect"
@@ -107,6 +109,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
+        android:fontFamily="@font/qartella_bold"
         android:text="Email:"
         android:textColor="@color/black"
         android:textSize="15sp"
@@ -120,6 +123,7 @@
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/qartella_regular"
         android:text="Log in to view your details"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/whiterect"
@@ -145,11 +149,64 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:fontFamily="@font/qartella_regular"
         android:text="Log out"
         android:textColor="#FF0000"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="@+id/whiterect"
-        app:layout_constraintEnd_toEndOf="@+id/whiterect" />
+        app:layout_constraintEnd_toEndOf="@+id/whiterect"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/sign_in_button" />
+
+    <TextView
+        android:id="@+id/dltAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/qartella_regular"
+        android:text="Delete account"
+        android:textColor="#FF0000"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect"
+        app:layout_constraintEnd_toStartOf="@+id/sign_in_button"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/whiterect" />
+
+    <TextView
+        android:id="@+id/confirmDlt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/qartella_bold"
+        android:text="Are you sure you want to delete your account?"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/sign_in_button"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/whiterect"
+        app:layout_constraintTop_toTopOf="@+id/login" />
+
+    <Button
+        android:id="@+id/yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YES"
+        app:layout_constraintBottom_toTopOf="@+id/dltAcc"
+        app:layout_constraintEnd_toStartOf="@+id/sign_in_button"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="@+id/whiterect"
+        app:layout_constraintTop_toBottomOf="@+id/confirmDlt"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <Button
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect"
+        app:layout_constraintStart_toEndOf="@+id/sign_in_button"
+        app:layout_constraintTop_toBottomOf="@+id/confirmDlt" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/camera"
