@@ -8,16 +8,17 @@
     android:background="@drawable/ic_background_wave4">
 
 
-    <!--    bottom nav-->
+    <!--    2 blokken tekts postief/negatief -->
 
     <TextView
+        android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/qartella_bold"
-        android:text="Previous results"
+        android:text="@string/result_title"
         android:textAllCaps="true"
-        android:textColor="@color/black"
+        android:textColor="#384C71"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintHorizontal_bias="0.497"
@@ -26,8 +27,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/whiterect"
-        android:layout_width="328dp"
+        android:id="@+id/whiterect1"
+        android:layout_width="390dp"
         android:layout_height="150dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
@@ -39,8 +40,59 @@
         app:layout_constraintVertical_bias="0.16" />
 
     <TextView
-        android:id="@+id/whiterect4"
-        android:layout_width="328dp"
+        android:id="@+id/address1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="312dp"
+        android:layout_marginBottom="78dp"
+        android:fontFamily="@font/qartella_regular"
+        android:text="@string/result_addy"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect1"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect1"
+        app:layout_constraintStart_toStartOf="@+id/whiterect1"
+        app:layout_constraintTop_toTopOf="@+id/whiterect1" />
+
+    <TextView
+        android:id="@+id/result1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/qartella_regular"
+        android:text="@string/pic_result"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247" />
+
+    <TextView
+        android:id="@+id/date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="334dp"
+        android:layout_marginBottom="107dp"
+        android:fontFamily="@font/qartella_regular"
+        android:text="@string/result_date"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect1"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect1"
+        app:layout_constraintStart_toStartOf="@+id/whiterect1"
+        app:layout_constraintTop_toTopOf="@+id/whiterect1" />
+
+    <TextView
+        android:id="@+id/whiterect2"
+        android:layout_width="390dp"
         android:layout_height="150dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
@@ -49,81 +101,25 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.404" />
+        app:layout_constraintVertical_bias="0.38" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/address2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="312dp"
+        android:layout_marginBottom="78dp"
         android:fontFamily="@font/qartella_regular"
         android:text="@string/result_addy"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.185" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/qartella_regular"
-        android:text="@string/result_date"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.137"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.153" />
-
-    <!--    image-->
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/qartella_regular"
-        android:text="@string/pic_result"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.351"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.243" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/imageplaceholder"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.231" />
-
-    <TextView
-        android:id="@+id/date2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/qartella_regular"
-        android:text="@string/result_date"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.36" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect2"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect2"
+        app:layout_constraintStart_toStartOf="@+id/whiterect2"
+        app:layout_constraintTop_toTopOf="@+id/whiterect2" />
 
     <TextView
         android:id="@+id/result2"
@@ -134,40 +130,29 @@
         android:textColor="@color/black"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.353"
+        app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintVertical_bias="0.444" />
 
     <TextView
-        android:id="@+id/address2"
+        android:id="@+id/date2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="334dp"
+        android:layout_marginBottom="107dp"
         android:fontFamily="@font/qartella_regular"
-        android:text="@string/result_addy"
+        android:text="@string/result_date"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.148"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395" />
-
-    <!--    image-->
-
-    <TextView
-        android:id="@+id/image2"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/imageplaceholder"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect2"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect2"
+        app:layout_constraintStart_toStartOf="@+id/whiterect2"
+        app:layout_constraintTop_toTopOf="@+id/whiterect2" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/camera"

@@ -7,19 +7,17 @@
     tools:context=".MainActivity"
     android:background="@drawable/ic_background_wave4">
 
-
-    <!--    bottom nav-->
-
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/qartella_bold"
-        android:text="More about us"
+        android:text="@string/more_about"
         android:textAllCaps="true"
-        android:textColor="@color/black"
+        android:textColor="#384C71"
         android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -27,84 +25,100 @@
 
     <TextView
         android:id="@+id/whoButton"
-        android:layout_width="328dp"
-        android:layout_height="80dp"
+        android:layout_width="390dp"
+        android:layout_height="55dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
+        android:elevation="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.184" />
+        app:layout_constraintVertical_bias="0.13" />
 
     <TextView
         android:id="@+id/howButton"
-        android:layout_width="328dp"
-        android:layout_height="80dp"
+        android:layout_width="390dp"
+        android:layout_height="55dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
+        android:elevation="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.435" />
+        app:layout_constraintVertical_bias="0.303" />
 
     <TextView
         android:id="@+id/whatButton"
-        android:layout_width="328dp"
-        android:layout_height="80dp"
+        android:layout_width="390dp"
+        android:layout_height="55dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
+        android:elevation="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.309" />
+        app:layout_constraintVertical_bias="0.217" />
 
     <TextView
         android:id="@+id/whatTextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="276dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="6dp"
         android:fontFamily="@font/qartella_regular"
         android:text="What do we do and why?"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/whatButton"
+        app:layout_constraintEnd_toEndOf="@+id/whatButton"
+        app:layout_constraintStart_toStartOf="@+id/whatButton"
+        app:layout_constraintTop_toTopOf="@+id/whatButton"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/whoTextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="176dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="15dp"
+        android:elevation="6dp"
         android:fontFamily="@font/qartella_regular"
         android:text="Who are we?"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/whoButton"
+        app:layout_constraintEnd_toEndOf="@+id/whoButton"
+        app:layout_constraintStart_toStartOf="@+id/whoButton"
+        app:layout_constraintTop_toTopOf="@+id/whoButton" />
 
     <TextView
         android:id="@+id/howTextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="376dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="15dp"
+        android:elevation="6dp"
         android:fontFamily="@font/qartella_regular"
         android:text="How does it work?"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/howButton"
+        app:layout_constraintEnd_toEndOf="@+id/howButton"
+        app:layout_constraintStart_toStartOf="@+id/howButton"
+        app:layout_constraintTop_toTopOf="@+id/howButton" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/camera"

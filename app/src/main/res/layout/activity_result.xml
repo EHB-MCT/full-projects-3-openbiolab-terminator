@@ -9,16 +9,17 @@
 
     <!-- add string xml for result -->
     <TextView
+        android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/qartella_bold"
-        android:text="Your results"
+        android:text="@string/result_title"
         android:textAllCaps="true"
-        android:textColor="@color/black"
+        android:textColor="#384C71"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -54,43 +55,45 @@
 
     <TextView
         android:id="@+id/whiterect"
-        android:layout_width="330dp"
-        android:layout_height="245dp"
-        android:layout_marginBottom="144dp"
+        android:layout_width="390dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="161dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/bluerect"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bluerect" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="22dp"
         android:fontFamily="@font/qartella_bold"
-        android:text="Save results"
+        android:text="@string/saved_title"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintHorizontal_bias="0.133"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/bluerect" />
 
     <TextView
         android:id="@+id/txtTestValue"
         android:layout_width="326dp"
         android:layout_height="52dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="72dp"
         android:fontFamily="@font/qartella_regular"
-        android:text="@string/otomatcly"
-        android:textColor="@color/black"
+        android:text="@string/saved_text"
+        android:textColor="@color/white"
         android:textSize="12sp"
         app:layout_constraintHorizontal_bias="0.411"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/bluerect" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/camera"
