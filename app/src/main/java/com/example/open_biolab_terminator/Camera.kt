@@ -38,13 +38,7 @@ class Camera : AppCompatActivity() {
     private lateinit var outputDirectory: File
     private lateinit var cameraExecutor: ExecutorService
 
-    private suspend fun OpenCV(savedUri:Uri): String {
-        val py = Python.getInstance()
-        val pyObj = py.getModule("color-detection")
-        val result = (pyObj.callAttr("colorDetection", savedUri.path)).toString()
-        delay(10000)
-        return result
-    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -97,10 +91,14 @@ class Camera : AppCompatActivity() {
                     if (! Python.isStarted()) {
                         Python.start( AndroidPlatform(applicationContext))
                     }
-                    var opencv = ""
-                   CoroutineScope(Default).launch {
-                        opencv =  OpenCV(savedUri)
-                   }
+
+                    fun OpenCV(savedUri:Uri): String {
+                        val py = Python.getInstance()
+                        val pyObj = py.getModule("color-detection")
+                        val result = (pyObj.callAttr("colorDetection", savedUri.path)).toString()
+                        return result
+                    }
+                    val opencv = OpenCV(savedUri)
                     val msg = "bgr value: $opencv"
                     //"Photo capture succeeded: $savedUri "
                     Toast.makeText(baseContext, msg, Toast.LENGTH_SHORT).show()
