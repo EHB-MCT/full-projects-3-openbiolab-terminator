@@ -8,6 +8,7 @@ import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
 
+
 class About : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
