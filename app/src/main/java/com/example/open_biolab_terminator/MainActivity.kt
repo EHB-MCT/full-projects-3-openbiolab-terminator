@@ -38,6 +38,8 @@ class MainActivity : AppCompatActivity() {
         val btnHomePage = findViewById<Button>(R.id.home)
         val userName = findViewById<TextView>(R.id.welcome_user)
         val logout = findViewById<TextView>(R.id.logout)
+        val login = findViewById<TextView>(R.id.login)
+
 
 
 
@@ -51,6 +53,9 @@ class MainActivity : AppCompatActivity() {
         btnHomePage.visibility = View.GONE
         btnMoreInfo.visibility = View.GONE
         logout.visibility = View.GONE
+        login.visibility = View.GONE
+
+
 
 
 
@@ -65,7 +70,7 @@ class MainActivity : AppCompatActivity() {
             btnHomePage.visibility = View.VISIBLE
             btnMoreInfo.visibility = View.VISIBLE
             logout.visibility = View.GONE
-
+            login.visibility = View.VISIBLE
 
         }
 
@@ -85,9 +90,14 @@ class MainActivity : AppCompatActivity() {
         sign_in_button.setOnClickListener {
             val signInIntent = mGoogleSignInClient.signInIntent
             startActivityForResult(signInIntent, RC_SIGN_IN)
-
-
         }
+
+        // sign in when clicking on login
+        login.setOnClickListener {
+            val signInIntent = mGoogleSignInClient.signInIntent
+            startActivityForResult(signInIntent, RC_SIGN_IN)
+        }
+
         //Check if the user is already signed in
         val acct = GoogleSignIn.getLastSignedInAccount(this)
         if (acct != null) {
@@ -101,6 +111,7 @@ class MainActivity : AppCompatActivity() {
             userName.visibility = View.VISIBLE
             btnMoreInfo.visibility = View.VISIBLE
             logout.visibility = View.VISIBLE
+            login.visibility = View.GONE
 
         }
 
@@ -111,15 +122,16 @@ class MainActivity : AppCompatActivity() {
 
                     Toast.makeText(this, "Logout succesfull", Toast.LENGTH_SHORT).show()
 
-                    later.visibility = View.VISIBLE
+                    later.visibility = View.GONE
                     userName.visibility = View.GONE
-                    sign_in_button.visibility = View.VISIBLE
-                    btnAccount.visibility = View.GONE
-                    btnGetStarted.visibility = View.GONE
-                    btnSavedResults.visibility = View.GONE
-                    btnHomePage.visibility = View.GONE
-                    btnMoreInfo.visibility = View.GONE
+                    sign_in_button.visibility = View.GONE
+                    btnAccount.visibility = View.VISIBLE
+                    btnGetStarted.visibility = View.VISIBLE
+                    btnSavedResults.visibility = View.VISIBLE
+                    btnHomePage.visibility = View.VISIBLE
+                    btnMoreInfo.visibility = View.VISIBLE
                     logout.visibility = View.GONE
+                    login.visibility = View.VISIBLE
 
                 })
         }
@@ -173,6 +185,8 @@ class MainActivity : AppCompatActivity() {
         val btnHomePage = findViewById<Button>(R.id.home)
         val userName = findViewById<TextView>(R.id.welcome_user)
         val logout = findViewById<TextView>(R.id.logout)
+        val login = findViewById<TextView>(R.id.login)
+
 
 
 
@@ -189,6 +203,7 @@ class MainActivity : AppCompatActivity() {
             userName.visibility = View.VISIBLE
             btnMoreInfo.visibility = View.VISIBLE
             logout.visibility = View.VISIBLE
+            login.visibility = View.GONE
 
 
 
