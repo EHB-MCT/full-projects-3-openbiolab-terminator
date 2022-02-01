@@ -19,10 +19,16 @@ import com.chaquo.python.Python
 import com.chaquo.python.android.AndroidPlatform
 import kotlinx.android.synthetic.main.activity_camera.*
 import kotlinx.android.synthetic.main.activity_result.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers.Default
+import kotlinx.coroutines.Dispatchers.IO
+import kotlinx.coroutines.Dispatchers.Main
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.ExecutorService
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 
 class Camera : AppCompatActivity() {
@@ -31,6 +37,14 @@ class Camera : AppCompatActivity() {
 
     private lateinit var outputDirectory: File
     private lateinit var cameraExecutor: ExecutorService
+
+    private suspend fun OpenCV(savedUri:Uri): String {
+        val py = Python.getInstance()
+        val pyObj = py.getModule("color-detection")
+        val result = (pyObj.callAttr("colorDetection", savedUri.path)).toString()
+        delay(10000)
+        return result
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,9 +61,9 @@ class Camera : AppCompatActivity() {
         // Set up the listener for take photo button
         btnImageCapture.setOnClickListener {
             takePhoto()
-            //val intent = Intent(this, Result::class.java)
-            //intent.putExtra("BGR_Value", BGR_Value)
-            //startActivity(intent)
+            val intent = Intent(this, Result::class.java)
+            intent.putExtra("BGR_Value", BGR_Value)
+            startActivity(intent)
         }
 
         outputDirectory = getOutputDirectory()
@@ -83,16 +97,16 @@ class Camera : AppCompatActivity() {
                     if (! Python.isStarted()) {
                         Python.start( AndroidPlatform(applicationContext))
                     }
-                    val py = Python.getInstance()
-                    val pyObj = py.getModule("color-detection")
-                    val obj = pyObj.callAttr("colorDetection", savedUri.path)
-                    print(obj)
-                    val msg = "bgr value: $obj"
+                    var opencv = ""
+                   CoroutineScope(Default).launch {
+                        opencv =  OpenCV(savedUri)
+                   }
+                    val msg = "bgr value: $opencv"
                     //"Photo capture succeeded: $savedUri "
                     Toast.makeText(baseContext, msg, Toast.LENGTH_SHORT).show()
                     Log.d(TAG, msg)
                     val textTestValue = findViewById<TextView>(R.id.txtTestValue)
-                    BGR_Value = obj.toString()
+                    BGR_Value = opencv.toString()
 
                 }
             })
