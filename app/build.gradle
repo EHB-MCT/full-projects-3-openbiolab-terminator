@@ -22,8 +22,6 @@ android {
         }
         python{
 
-            buildPython "app/pythonProgram/python.exe"
-
             pip{
                 install "opencv-python"
             }
