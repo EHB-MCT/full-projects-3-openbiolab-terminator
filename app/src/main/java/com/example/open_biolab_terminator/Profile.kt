@@ -1,22 +1,23 @@
 package com.example.open_biolab_terminator
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.SignInButton
 import com.google.android.gms.common.api.ApiException
+import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.gms.tasks.Task
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class Profile : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,9 +31,12 @@ class Profile : AppCompatActivity() {
         val name = findViewById<TextView>(R.id.name)
         val email = findViewById<TextView>(R.id.email)
         val loginText = findViewById<TextView>(R.id.login)
+        val logout = findViewById<TextView>(R.id.logout)
+
 
         name.visibility = View.GONE
         email.visibility = View.GONE
+        logout.visibility = View.GONE
         sign_in_button.visibility = View.VISIBLE
         loginText.visibility = View.VISIBLE
 
@@ -50,7 +54,6 @@ class Profile : AppCompatActivity() {
             val signInIntent = mGoogleSignInClient.signInIntent
             startActivityForResult(signInIntent, RC_SIGN_IN)
 
-
         }
         //Check if the user is already signed in
         val acct = GoogleSignIn.getLastSignedInAccount(this)
@@ -61,10 +64,25 @@ class Profile : AppCompatActivity() {
             email.visibility = View.VISIBLE
             sign_in_button.visibility = View.GONE
             loginText.visibility = View.GONE
+            logout.visibility = View.VISIBLE
 
         }
 
+        // Let the user log out
+        logout.setOnClickListener {
+            mGoogleSignInClient.signOut()
+                .addOnCompleteListener(this, OnCompleteListener<Void?> {
 
+                    Toast.makeText(this, "Logout succesfull", Toast.LENGTH_SHORT).show()
+
+                    name.visibility = View.GONE
+                    email.visibility = View.GONE
+                    logout.visibility = View.GONE
+                    sign_in_button.visibility = View.VISIBLE
+                    loginText.visibility = View.VISIBLE
+
+                })
+        }
 
 
         /* Home Button */
@@ -118,6 +136,8 @@ class Profile : AppCompatActivity() {
         val name = findViewById<TextView>(R.id.name)
         val email = findViewById<TextView>(R.id.email)
         val loginText = findViewById<TextView>(R.id.login)
+        val logout = findViewById<TextView>(R.id.logout)
+
 
 
         try {
@@ -129,6 +149,8 @@ class Profile : AppCompatActivity() {
             email.visibility = View.VISIBLE
             sign_in_button.visibility = View.GONE
             loginText.visibility = View.GONE
+            logout.visibility = View.VISIBLE
+
 
 
 
@@ -141,4 +163,5 @@ class Profile : AppCompatActivity() {
 
         }
     }
+
 }
