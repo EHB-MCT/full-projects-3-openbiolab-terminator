@@ -14,6 +14,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.SignInButton
 import com.google.android.gms.common.api.ApiException
+import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.gms.tasks.Task
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -36,6 +37,8 @@ class MainActivity : AppCompatActivity() {
         val btnSavedResults = findViewById<Button>(R.id.boomark)
         val btnHomePage = findViewById<Button>(R.id.home)
         val userName = findViewById<TextView>(R.id.welcome_user)
+        val logout = findViewById<TextView>(R.id.logout)
+
 
 
         // set all visibilities
@@ -47,6 +50,8 @@ class MainActivity : AppCompatActivity() {
         btnSavedResults.visibility = View.GONE
         btnHomePage.visibility = View.GONE
         btnMoreInfo.visibility = View.GONE
+        logout.visibility = View.GONE
+
 
 
         // Hide sign in when clicking on later
@@ -59,6 +64,8 @@ class MainActivity : AppCompatActivity() {
             btnSavedResults.visibility = View.VISIBLE
             btnHomePage.visibility = View.VISIBLE
             btnMoreInfo.visibility = View.VISIBLE
+            logout.visibility = View.GONE
+
 
         }
 
@@ -93,6 +100,28 @@ class MainActivity : AppCompatActivity() {
             userName.text = "Welcome " + acct.displayName
             userName.visibility = View.VISIBLE
             btnMoreInfo.visibility = View.VISIBLE
+            logout.visibility = View.VISIBLE
+
+        }
+
+        // Let the user log out
+        logout.setOnClickListener {
+            mGoogleSignInClient.signOut()
+                .addOnCompleteListener(this, OnCompleteListener<Void?> {
+
+                    Toast.makeText(this, "Logout succesfull", Toast.LENGTH_SHORT).show()
+
+                    later.visibility = View.VISIBLE
+                    userName.visibility = View.GONE
+                    sign_in_button.visibility = View.VISIBLE
+                    btnAccount.visibility = View.GONE
+                    btnGetStarted.visibility = View.GONE
+                    btnSavedResults.visibility = View.GONE
+                    btnHomePage.visibility = View.GONE
+                    btnMoreInfo.visibility = View.GONE
+                    logout.visibility = View.GONE
+
+                })
         }
 
 
@@ -143,6 +172,8 @@ class MainActivity : AppCompatActivity() {
         val btnSavedResults = findViewById<Button>(R.id.boomark)
         val btnHomePage = findViewById<Button>(R.id.home)
         val userName = findViewById<TextView>(R.id.welcome_user)
+        val logout = findViewById<TextView>(R.id.logout)
+
 
 
         try {
@@ -157,6 +188,8 @@ class MainActivity : AppCompatActivity() {
             userName.text = "Welcome " + account.displayName
             userName.visibility = View.VISIBLE
             btnMoreInfo.visibility = View.VISIBLE
+            logout.visibility = View.VISIBLE
+
 
 
 
@@ -164,7 +197,7 @@ class MainActivity : AppCompatActivity() {
             // The ApiException status code indicates the detailed failure reason.
             // Please refer to the GoogleSignInStatusCodes class reference for more information.
 
-            Toast.makeText(this, "Unvalid data", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Could not sign in", Toast.LENGTH_SHORT).show()
 
         }
     }
