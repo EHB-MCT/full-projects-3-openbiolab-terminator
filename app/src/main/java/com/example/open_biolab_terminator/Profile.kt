@@ -1,7 +1,9 @@
 package com.example.open_biolab_terminator
 
+import android.content.ContentValues
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.Window
 import android.view.WindowManager
@@ -16,8 +18,13 @@ import com.google.android.gms.common.SignInButton
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.gms.tasks.Task
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_main.*
 
+private lateinit var auth: FirebaseAuth
 
 class Profile : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,9 +55,13 @@ class Profile : AppCompatActivity() {
         yes.visibility = View.GONE
         no.visibility = View.GONE
 
+        // Initialize Firebase Auth
+        auth = Firebase.auth
+
 
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            .requestIdToken(getString(R.string.default_web_client_id_2))
             .requestEmail()
             .build()
 
@@ -100,6 +111,7 @@ class Profile : AppCompatActivity() {
                     no.visibility = View.GONE
 
                 })
+            Firebase.auth.signOut()
         }
 
 
@@ -219,6 +231,9 @@ class Profile : AppCompatActivity() {
             yes.visibility = View.GONE
             no.visibility = View.GONE
 
+            val id = account.idToken
+            firebaseAuthWithGoogle(id.toString())
+
 
 
         } catch (e: ApiException) {
@@ -228,6 +243,77 @@ class Profile : AppCompatActivity() {
             Toast.makeText(this, "Invalid data", Toast.LENGTH_SHORT).show()
 
         }
+    }
+
+    override fun onStart() {
+
+        val name = findViewById<TextView>(R.id.name)
+        val email = findViewById<TextView>(R.id.email)
+        val loginText = findViewById<TextView>(R.id.login)
+        val logout = findViewById<TextView>(R.id.logout)
+        val deleteAcc = findViewById<TextView>(R.id.dltAcc)
+        val confirm = findViewById<TextView>(R.id.confirmDlt)
+        val yes = findViewById<Button>(R.id.yes)
+        val no = findViewById<Button>(R.id.no)
+
+        super.onStart()
+        // Check if user is signed in (non-null) and update UI accordingly.
+        val currentUser = auth.getCurrentUser()
+
+        if (currentUser != null) {
+            name.text = currentUser.displayName
+            name.visibility = View.VISIBLE
+            email.text = currentUser.email
+            email.visibility = View.VISIBLE
+            sign_in_button.visibility = View.GONE
+            loginText.visibility = View.GONE
+            logout.visibility = View.VISIBLE
+            deleteAcc.visibility = View.VISIBLE
+            confirm.visibility = View.GONE
+            yes.visibility = View.GONE
+            no.visibility = View.GONE
+        }
+
+    }
+
+    private fun firebaseAuthWithGoogle(idToken: String) {
+
+        val name = findViewById<TextView>(R.id.name)
+        val email = findViewById<TextView>(R.id.email)
+        val loginText = findViewById<TextView>(R.id.login)
+        val logout = findViewById<TextView>(R.id.logout)
+        val deleteAcc = findViewById<TextView>(R.id.dltAcc)
+        val confirm = findViewById<TextView>(R.id.confirmDlt)
+        val yes = findViewById<Button>(R.id.yes)
+        val no = findViewById<Button>(R.id.no)
+
+        val credential = GoogleAuthProvider.getCredential(idToken, null)
+        auth.signInWithCredential(credential)
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    // Sign in success, update UI with the signed-in user's information
+                    Log.d(ContentValues.TAG, "signInWithCredential:success")
+                    val user = auth.currentUser
+                    if (user != null){
+                        name.text = user.displayName
+                        name.visibility = View.VISIBLE
+                        email.text = user.email
+                        email.visibility = View.VISIBLE
+                        sign_in_button.visibility = View.GONE
+                        loginText.visibility = View.GONE
+                        logout.visibility = View.VISIBLE
+                        deleteAcc.visibility = View.VISIBLE
+                        confirm.visibility = View.GONE
+                        yes.visibility = View.GONE
+                        no.visibility = View.GONE
+                    }
+
+                } else {
+                    // If sign in fails, display a message to the user.
+                    Log.w(ContentValues.TAG, "signInWithCredential:failure", task.exception)
+
+                }
+            }
     }
 
 }
