@@ -47,4 +47,6 @@
     <string name="not_now">"Ahora no "</string>
     <string name="allow_location">Permitir ubicación</string>
     <string name="allow_camera">Permitir cámara</string>
+    <string name="neg_result">needs translation</string>
+    <string name="pos_result">needs translation</string>
 </resources>

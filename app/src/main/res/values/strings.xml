@@ -12,6 +12,8 @@
 
     <!--    Data-->
     <string name="prev_result">Previous results</string>
+    <string name="pos_result">This water is drinkable!</string>
+    <string name="neg_result">This water is  not drinkable!</string>
     <string name="pic_result">result</string>
     <string name="result_date">Date:</string>
     <string name="result_addy">Address:</string>
