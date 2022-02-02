@@ -226,6 +226,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun firebaseAuthWithGoogle(idToken: String) {
+
+        val btnMoreInfo = findViewById<Button>(R.id.info)
+        val btnGetStarted = findViewById<Button>(R.id.camerahome)
+        val btnAccount = findViewById<Button>(R.id.profile)
+        val btnSavedResults = findViewById<Button>(R.id.boomark)
+        val btnHomePage = findViewById<Button>(R.id.home)
+        val userName = findViewById<TextView>(R.id.welcome_user)
+        val logout = findViewById<TextView>(R.id.logout)
+
         val credential = GoogleAuthProvider.getCredential(idToken, null)
         auth.signInWithCredential(credential)
             .addOnCompleteListener(this) { task ->
@@ -233,11 +242,22 @@ class MainActivity : AppCompatActivity() {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d(TAG, "signInWithCredential:success")
                     val user = auth.currentUser
-                    //updateUI(user)
+                    if (user != null){
+                        sign_in_button.visibility = View.GONE
+                        btnAccount.visibility = View.VISIBLE
+                        btnGetStarted.visibility = View.VISIBLE
+                        btnSavedResults.visibility = View.VISIBLE
+                        btnHomePage.visibility = View.VISIBLE
+                        userName.text = "Welcome " + user.displayName
+                        userName.visibility = View.VISIBLE
+                        btnMoreInfo.visibility = View.VISIBLE
+                        logout.visibility = View.VISIBLE
+                    }
+
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w(TAG, "signInWithCredential:failure", task.exception)
-                    //updateUI(null)
+
                 }
             }
     }
