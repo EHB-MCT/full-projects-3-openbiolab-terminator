@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 val value = snapshot.getValue<String>()
-                Log.d(TAG, "Value is: " + value)
+                Log.d(TAG, "Value is: $value")
             }
 
             override fun onCancelled(error: DatabaseError) {
