@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/ic_background_wave4">
+    android:background="@drawable/ic_background_wave4"
+    tools:context=".MainActivity">
 
 
     <!--    bottom nav-->
@@ -22,6 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -39,14 +40,15 @@
         android:id="@+id/whiterect"
         android:layout_width="328dp"
         android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/whiterect2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.189" />
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        app:layout_constraintVertical_bias="0.934" />
 
     <TextView
         android:id="@+id/whiterect3"
@@ -65,14 +67,15 @@
         android:id="@+id/whiterect2"
         android:layout_width="328dp"
         android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/whiterect3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.305" />
+        app:layout_constraintVertical_bias="0.979" />
 
     <TextView
         android:id="@+id/textView9"
@@ -82,12 +85,13 @@
         android:text="What do we do and why?"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect2"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.321" />
+        app:layout_constraintStart_toStartOf="@+id/whiterect2"
+        app:layout_constraintTop_toTopOf="@+id/whiterect2"
+        app:layout_constraintVertical_bias="0.518" />
 
     <TextView
         android:id="@+id/textView"
@@ -97,41 +101,48 @@
         android:text="Who are we?"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.206" />
+        app:layout_constraintStart_toStartOf="@+id/whiterect"
+        app:layout_constraintTop_toTopOf="@+id/whiterect" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
         android:fontFamily="@font/qartella_regular"
         android:text="How does it work?"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.427" />
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/whiterect3"
+        app:layout_constraintTop_toTopOf="@+id/whiterect3"
+        app:layout_constraintVertical_bias="0.54" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="250dp"
         android:layout_height="200dp"
+        android:layout_marginBottom="37dp"
         android:fontFamily="@font/qartella_regular"
         android:text="@string/howdoesitwork"
         android:textColor="@color/black"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/camera"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect3"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect3"
+        app:layout_constraintHorizontal_bias="0.564"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.605" />
+        app:layout_constraintStart_toStartOf="@+id/whiterect3"
+        app:layout_constraintTop_toTopOf="@+id/whiterect3"
+        app:layout_constraintVertical_bias="1.0" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/camera"

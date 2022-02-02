@@ -4,11 +4,8 @@ def colorDetection(image_directory):
     image = cv2.imread(image_directory)
     image = cv2.resize(image, (300, 300))
     hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
-<<<<<<< Updated upstream
-    minValue = np.array([90, 0, 25])
-=======
+
     minValue = np.array([90, 0, 0])
->>>>>>> Stashed changes
     maxValue = np.array([130, 255, 255])
 
     blue = 0
@@ -37,20 +34,6 @@ def colorDetection(image_directory):
         bgrAverage = [blue, green, red]
         print("blue: " + str(bgrAverage[0]) + " green: " + str(bgrAverage[1]) + " red: " + str(bgrAverage[2]) + " total_pixels: " + str(total_pixels) )
     except SyntaxError:
-<<<<<<< Updated upstream
-        bgrAverage = "error: there is no blue detected"
-    cv2.imshow("image",image)
-    cv2.imshow("mask", mask)
-    cv2.imshow("result", result)
-    cv2.waitKey(5000)
-=======
         bgrAverage = "error: there was a problem with the image"
->>>>>>> Stashed changes
 
     return bgrAverage
-
-
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes

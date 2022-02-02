@@ -70,18 +70,13 @@ dependencies {
     implementation "androidx.camera:camera-video:${camerax_version}"
     implementation "androidx.camera:camera-view:${camerax_version}"
     implementation "androidx.camera:camera-extensions:${camerax_version}"
-<<<<<<< Updated upstream
     def coroutines_version = "1.2.1"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
     implementation "androidx.core:core-ktx:+"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-=======
-    def coroutines_version = "1.6.0"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutines_version}"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:${coroutines_version}"
-
->>>>>>> Stashed changes
+    implementation platform('com.google.firebase:firebase-bom:29.0.4')
+    implementation 'com.google.firebase:firebase-database-ktx'
 
 
 }
