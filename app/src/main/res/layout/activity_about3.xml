@@ -149,6 +149,14 @@
         app:layout_constraintStart_toStartOf="@+id/whiterect3"
         app:layout_constraintTop_toTopOf="@+id/whiterect3" />
 
+    <TextView
+        android:id="@+id/navbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/nav_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/camera"
         android:layout_width="70dp"
