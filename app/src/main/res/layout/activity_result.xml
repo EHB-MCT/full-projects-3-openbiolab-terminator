@@ -9,36 +9,54 @@
 
     <!-- add string xml for result -->
     <TextView
+        android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/qartella_bold"
-        android:text="Your results"
+        android:text="@string/result_title"
         android:textAllCaps="true"
-        android:textColor="@color/black"
+        android:textColor="#384C71"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 <!-- add string xml for result -->
 
-    <TextView
-        android:layout_width="60dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="196dp"
-        android:fontFamily="@font/qartella_bold"
-        android:text="Result"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintHorizontal_bias="0.061"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <!--    bottom nav-->
+
+    <TextView
+        android:id="@+id/resultrect"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/rectangle_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243" />
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="284dp"
+        android:layout_marginBottom="34dp"
+        android:text="@string/pos_result"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/resultrect"
+        app:layout_constraintEnd_toEndOf="@+id/resultrect"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="@+id/resultrect"
+        app:layout_constraintTop_toTopOf="@+id/resultrect"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/bluerect"
@@ -52,52 +70,77 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/buttonblue"
+        android:fontFamily="@font/qartella_bold"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect" />
+
     <TextView
         android:id="@+id/whiterect"
-        android:layout_width="330dp"
-        android:layout_height="245dp"
-        android:layout_marginBottom="144dp"
+        android:layout_width="390dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="161dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/bluerect"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bluerect" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="308dp"
+        android:layout_marginTop="22dp"
         android:fontFamily="@font/qartella_bold"
-        android:text="Save results"
+        android:text="@string/saved_title"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/bluerect" />
 
     <TextView
         android:id="@+id/txtTestValue"
         android:layout_width="326dp"
         android:layout_height="52dp"
-        android:layout_marginTop="380dp"
+        android:layout_marginTop="72dp"
         android:fontFamily="@font/qartella_regular"
-        android:text="@string/otomatcly"
-        android:textColor="@color/black"
+        android:text="@string/saved_text"
+        android:textColor="@color/white"
         android:textSize="12sp"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/bluerect" />
+
+    <TextView
+        android:id="@+id/navbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/nav_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/camera"
         android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="4dp"
-        android:background="@drawable/camera"
+        android:layout_height="51dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/camera_blue"
         android:backgroundTint="#384C71"
         android:elevation="2dp"
         android:scaleType="fitCenter"
@@ -108,10 +151,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/boomark"
-        android:layout_width="30dp"
+        android:layout_width="21dp"
         android:layout_height="30dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/bookmark"
+        android:background="@drawable/saved_blue_empty"
         android:backgroundTint="#384C71"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.265"
@@ -123,7 +166,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/info"
+        android:background="@drawable/info_blue_empty"
         android:backgroundTint="#384C71"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.892"
@@ -135,7 +178,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/account"
+        android:background="@drawable/profile_blue_empty"
         android:backgroundTint="#384C71"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.73"
@@ -147,7 +190,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/homeicon"
+        android:background="@drawable/home_blue_empty"
         android:backgroundTint="#384C71"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.104"

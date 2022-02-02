@@ -4,24 +4,9 @@
      xmlns:tools="http://schemas.android.com/tools"
      android:layout_width="match_parent"
      android:layout_height="match_parent"
-    android:background="@drawable/backgroundsteps"
+    android:background="@drawable/ic_artboard_1"
     tools:context=".Steps">
 
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="230dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="108dp"
-        android:fontFamily="@font/qartella_bold"
-        android:text="First, some steps"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
@@ -30,7 +15,7 @@
         android:layout_marginBottom="288dp"
         android:gravity="center"
         android:fontFamily="@font/qartella_regular"
-        android:text="We need access to your camera to be able to analyse your water."
+        android:text="@string/camera_text"
         android:textColor="@color/black"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,21 +27,23 @@
     <TextView
         android:id="@+id/imagePlaceholder"
         android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:background="@drawable/ic_camera_permission2"
+        android:layout_height="240dp"
+        android:background="@drawable/new_camera_ill"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.334" />
+        app:layout_constraintVertical_bias="0.225" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="350dp"
         android:layout_height="39dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginBottom="344dp"
         android:fontFamily="@font/qartella_bold"
-        android:text="Give access to your camera"
+        android:text="@string/camera_access"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -64,8 +51,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.596" />
+        app:layout_constraintTop_toBottomOf="@+id/imagePlaceholder" />
 
     <TextView
         android:id="@+id/textView5"
@@ -74,7 +60,7 @@
         android:layout_marginBottom="108dp"
         android:fontFamily="@font/qartella_regular"
         android:gravity="center"
-        android:text="You still can change the permissions in your settings"
+        android:text="@string/perm_text"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -89,10 +75,10 @@
         android:layout_marginBottom="148dp"
         android:background="@drawable/buttonblue"
         android:fontFamily="@font/qartella_bold"
-        android:text="Allow"
+        android:text="@string/allow_camera"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="25sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -100,13 +86,14 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="50dp"
+        android:layout_width="70dp"
         android:layout_height="18dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="60dp"
         android:fontFamily="@font/qartella_regular"
         android:text="Not now"
-        android:textColor="#486292"
-        android:textSize="12sp"
+        android:textColor="#567ECA"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
