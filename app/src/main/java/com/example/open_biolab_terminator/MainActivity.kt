@@ -198,10 +198,31 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onStart() {
+
+        val btnMoreInfo = findViewById<Button>(R.id.info)
+        val btnGetStarted = findViewById<Button>(R.id.camerahome)
+        val btnAccount = findViewById<Button>(R.id.profile)
+        val btnSavedResults = findViewById<Button>(R.id.boomark)
+        val btnHomePage = findViewById<Button>(R.id.home)
+        val userName = findViewById<TextView>(R.id.welcome_user)
+        val logout = findViewById<TextView>(R.id.logout)
+
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
         var currentUser = auth.getCurrentUser()
-        //updateUI(currentUser);
+
+        if (currentUser != null) {
+            sign_in_button.visibility = View.GONE
+            btnAccount.visibility = View.VISIBLE
+            btnGetStarted.visibility = View.VISIBLE
+            btnSavedResults.visibility = View.VISIBLE
+            btnHomePage.visibility = View.VISIBLE
+            userName.text = "Welcome " + currentUser.displayName
+            userName.visibility = View.VISIBLE
+            btnMoreInfo.visibility = View.VISIBLE
+            logout.visibility = View.VISIBLE
+        }
+
     }
 
     private fun firebaseAuthWithGoogle(idToken: String) {
