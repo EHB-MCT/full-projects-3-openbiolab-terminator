@@ -1,22 +1,31 @@
 package com.example.open_biolab_terminator
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class Result : AppCompatActivity() {
+
+    private lateinit var bgrValue:String
+    private lateinit var imgPath:String
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
+        
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_result)
-        val textTestValue = findViewById<TextView>(R.id.txtTestValue)
-        val BGR_Value = intent.extras!!.getString("BGR_Value")
-        textTestValue.setText(BGR_Value)
+
 
 
         /* Home Button */
@@ -56,6 +65,8 @@ class Result : AppCompatActivity() {
             val intent = Intent(this,About::class.java)
             startActivity(intent)
         }
+
+
 
     }
 }
