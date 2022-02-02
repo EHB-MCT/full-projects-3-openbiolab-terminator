@@ -26,6 +26,71 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+<!--    Needs translation -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="390dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/buttonblue"
+        android:fontFamily="@font/qartella_bold"
+        android:text="Filter on date"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button3"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/buttonblue"
+        android:fontFamily="@font/qartella_bold"
+        android:text="Filter on today"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button4"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/buttonblue"
+        android:fontFamily="@font/qartella_bold"
+        android:text="Filter on yesterday"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button5"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/buttonblue"
+        android:fontFamily="@font/qartella_bold"
+        android:text="Filter on all"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/whiterect1"
         android:layout_width="390dp"
@@ -34,10 +99,23 @@
         android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16" />
+        app:layout_constraintVertical_bias="0.311" />
+
+    <TextView
+        android:id="@+id/whiterect2"
+        android:layout_width="390dp"
+        android:layout_height="150dp"
+        android:background="@drawable/rectangleround"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531" />
 
     <TextView
         android:id="@+id/address1"
@@ -103,19 +181,6 @@
         app:layout_constraintEnd_toEndOf="@+id/whiterect1"
         app:layout_constraintStart_toStartOf="@+id/whiterect1"
         app:layout_constraintTop_toTopOf="@+id/whiterect1" />
-
-    <TextView
-        android:id="@+id/whiterect2"
-        android:layout_width="390dp"
-        android:layout_height="150dp"
-        android:background="@drawable/rectangleround"
-        android:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38" />
 
     <TextView
         android:id="@+id/address2"
