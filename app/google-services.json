@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "155721251322",
+    "project_id": "open-biolab-terminator",
+    "storage_bucket": "open-biolab-terminator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155721251322:android:399a246f46741589780c43",
+        "android_client_info": {
+          "package_name": "com.example.open_biolab_terminator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155721251322-fseee6tg2odth8ul39rm5d99htt6lv76.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUzjFENbI88cLQZWDFeWcNKmZB13NvHMM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155721251322-fseee6tg2odth8ul39rm5d99htt6lv76.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
