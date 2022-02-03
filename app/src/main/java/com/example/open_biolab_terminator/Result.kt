@@ -8,6 +8,7 @@ import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -28,7 +29,9 @@ class Result : AppCompatActivity() {
         bgrValue = extras!!.getString("bgrValue").toString()
         imgPath = extras!!.getString("imgPath").toString()
 
-
+        val db = Database(this, null)
+        db.addResult(bgrValue, imgPath)
+        Toast.makeText(this, bgrValue + " added to local database", Toast.LENGTH_SHORT).show()
 
         /* Home Button */
         /* Gets button id */
