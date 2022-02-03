@@ -62,7 +62,7 @@
         android:id="@+id/bluerect"
         android:layout_width="411dp"
         android:layout_height="463dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="84dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="#3466C6"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -198,17 +198,25 @@
         app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
-        android:id="@+id/resultDatabase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:text="Saved bgr values"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect"
+        app:layout_constraintStart_toStartOf="@+id/whiterect"
+        app:layout_constraintTop_toTopOf="@+id/whiterect" />
+
+    <TextView
+        android:id="@+id/resultDatabaseBGR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
         android:text=""
-        app:layout_constraintBottom_toTopOf="@+id/bluerect"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="@+id/whiterect"
+        app:layout_constraintTop_toTopOf="@+id/whiterect" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
