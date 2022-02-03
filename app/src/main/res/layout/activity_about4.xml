@@ -52,16 +52,15 @@
 
     <TextView
         android:id="@+id/whiterect3"
-        android:layout_width="328dp"
+        android:layout_width="390dp"
         android:layout_height="300dp"
+        android:layout_marginTop="260dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.595" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/whiterect2"
@@ -81,6 +80,9 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="75dp"
         android:fontFamily="@font/qartella_regular"
         android:text="What do we do and why?"
         android:textColor="@color/black"
@@ -97,6 +99,9 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="133dp"
         android:fontFamily="@font/qartella_regular"
         android:text="Who are we?"
         android:textColor="@color/black"
@@ -126,11 +131,13 @@
         app:layout_constraintTop_toTopOf="@+id/whiterect3"
         app:layout_constraintVertical_bias="0.54" />
 
+
     <TextView
         android:id="@+id/textView16"
         android:layout_width="250dp"
         android:layout_height="200dp"
         android:layout_marginBottom="37dp"
+
         android:fontFamily="@font/qartella_regular"
         android:text="@string/howdoesitwork"
         android:textColor="@color/black"
@@ -147,9 +154,9 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/camera"
         android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="4dp"
-        android:background="@drawable/camera"
+        android:layout_height="51dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/camera_blue"
         android:backgroundTint="#384C71"
         android:elevation="2dp"
         android:scaleType="fitCenter"
@@ -160,10 +167,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/boomark"
-        android:layout_width="30dp"
+        android:layout_width="21dp"
         android:layout_height="30dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/bookmark"
+        android:background="@drawable/saved_blue_empty"
         android:backgroundTint="#384C71"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.265"
@@ -175,7 +182,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/info"
+        android:background="@drawable/info_blue"
         android:backgroundTint="#384C71"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.892"
@@ -187,7 +194,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/account"
+        android:background="@drawable/profile_blue_empty"
         android:backgroundTint="#384C71"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.73"
@@ -199,11 +206,12 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/homeicon"
+        android:background="@drawable/home_blue_empty"
         android:backgroundTint="#384C71"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

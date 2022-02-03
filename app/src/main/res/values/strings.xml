@@ -1,13 +1,70 @@
 <resources>
     <string name="app_name">Biosensores</string>
-    <string name="btnstrGetStarted">Get started</string>
-    <string name="loginpage_signup">Don\'t have an account yet? <u>Sign Up!</u></string>
-    <string name="signuppage_login">Already have an account? <u>Login!</u></string>
-    <string name="otomatcly">Your results are automatically saved locally, however we advise you to also save your results to the database!</string>
-    <string name="pic_result">"result" </string>
-    <string name="result_date">Date: </string>
-    <string name="result_addy">Address:</string>
+
+    <!--    About us-->
+    <string name="more_about">More About Us</string>
+    <string name="who">Who are we?</string>
+    <string name="what">What do we do and why?</string>
+    <string name="how">How does it work?</string>
     <string name="whoarewe">We are a scientific organization based in Peru called Proyecto Biosensores. Together with scientists and students we try to help local people in Peru with their living conditions and make them aware of the health risks involved in heavy metal pollution concerning their water etc.</string>
     <string name="whatdowedo">The Biosensors project is based on the use of biological markers with the use of synthetic biology for the detection of heavy metals in water and the environment. The objectives of the project are to raise awareness about heavy metal pollution, improve science education, make local people aware of the health risks in their surroundings and improve the perception of science and biotechnology.</string>
     <string name="howdoesitwork">With the combination of a repressor and a reporter gene. In the absence of Hg, the expression of the reporter is blocked, hence the E.coli cell pellet remains white.In the presence of Hg, the reporter will be expressed, resulting in a blue E.coli cell pellet,detectable by the naked eye.In other words, if there is a form of metal in the water the pellet will have a blue color detectable by the naked eye, otherwise it stays white (or transparent) meaning the water is clear</string>
+
+    <!--    Data-->
+    <string name="prev_result">Previous results</string>
+    <string name="pos_result">This water is drinkable!</string>
+    <string name="neg_result">This water is not drinkable!</string>
+    <string name="pic_result">result</string>
+    <string name="result_date">Date:</string>
+    <string name="result_addy">Address:</string>
+
+    <!--    Error-->
+    <string name="error_msg">Retake the photo</string>
+    <string name="try_again">Try again</string>
+
+    <!--    Instructions-->
+    <string name="inst_title">This is how it works</string>
+    <string name="inst_sub_title">Determine if your water is drinkable or not</string>
+    <string name="step1_title">Step 1</string>
+    <string name="step1_text">Place the sample in a dark environment</string>
+    <string name="step2_title">Step 2</string>
+    <string name="step2_text">Make sure the sample is centered on your camera</string>
+    <string name="step3_title">Step 3</string>
+    <string name="step3_text">Make sure the picture is sharp enough by tapping on the pellet via the camera screen</string>
+    <string name="step4_title">Step 4</string>
+    <string name="step4_text">Hold the camera still and take the picture with flash</string>
+    <string name="start_analysing">Start Analysing</string>
+    <string name="dont_show">Don\'t show this again</string>
+
+    <!--    Login-->
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="loginpage_signup">Don\'t have an account yet? <u>Sign Up!</u></string>
+    <string name="signuppage_login">Already have an account? <u>Login!</u></string>
+    <string name="goback">Go Back</string>
+
+    <!--    Profile-->
+    <string name="profile">Your profile</string>
+    <string name="edit_pfp">edit profile picture</string>
+
+    <!--    Results-->
+    <string name="result_title">Your results</string>
+    <string name="saved_title">Save results</string>
+    <string name="saved_text">Your results are automatically saved locally, however we advise you to also save your results to the database!</string>
+
+    <!--    Steps-->
+    <string name="access_title">First, some steps</string>
+    <string name="location_access">Give access to your location</string>
+    <string name="camera_access">Give access to your camera</string>
+    <string name="location_text">We need your location to give you a better experience.</string>
+    <string name="camera_text">We need access to your camera to be able to analyse your water.</string>
+
+    <string name="loginorsignup">Login or sign up</string>
+    <string name="loginorsignup_text">To save your data and keep track of your research.</string>
+
+    <string name="allow_location">Allow location</string>
+    <string name="allow_camera">Allow camera</string>
+    <string name="perm_text">You still can change the permissions in your settings.</string>
+    <string name="not_now">Not now</string>
+
 </resources>

@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#E4EDFF"
     tools:context=".Steps">
 
 <!--title and subtitle-->
+
+    <!--    STEP 1 -->
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/startanalysing"
@@ -15,8 +17,9 @@
         android:layout_height="42dp"
         android:layout_marginBottom="9dp"
         android:background="@drawable/buttonwhite"
+        android:elevation="6dp"
         android:fontFamily="@font/qartella_bold"
-        android:text="Start analysing"
+        android:text="@string/start_analysing"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -71,15 +74,15 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
-        android:id="@+id/step4"
-        android:layout_width="85dp"
+        android:id="@+id/step1"
+        android:layout_width="84dp"
         android:layout_height="36dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="252dp"
         android:fontFamily="@font/qartella_bold"
-        android:text="Step 4"
-        android:textColor="@color/black"
+        android:text="@string/step1_title"
+        android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -97,8 +100,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="632dp"
         android:fontFamily="@font/qartella_regular"
-        android:text="Place the sample in a dark environment"
-        android:textColor="@color/black"
+        android:text="@string/step1_text"
+        android:textColor="@color/white"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -106,6 +109,7 @@
         app:layout_constraintStart_toEndOf="@+id/imgstep1"
         app:layout_constraintTop_toBottomOf="@+id/ste91" />
 
+<!--    STEP 2-->
     <TextView
         android:id="@+id/step4text"
         android:layout_width="223dp"
@@ -126,15 +130,25 @@ the picture with flash"
         app:layout_constraintVertical_bias="0.75" />
 
     <TextView
-        android:id="@+id/ste91"
+        android:id="@+id/imgstep2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/step_2"
+        app:layout_constraintStart_toStartOf="@+id/rect2"
+        app:layout_constraintTop_toTopOf="@+id/rect2" />
+
+    <TextView
+        android:id="@+id/step2"
         android:layout_width="84dp"
         android:layout_height="36dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="31dp"
         android:layout_marginBottom="684dp"
         android:fontFamily="@font/qartella_bold"
-        android:text="Step 1"
-        android:textColor="@color/black"
+        android:text="@string/step2_title"
+        android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -152,8 +166,8 @@ the picture with flash"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="488dp"
         android:fontFamily="@font/qartella_regular"
-        android:text="Make sure the sample is centered on your camera"
-        android:textColor="@color/black"
+        android:text="@string/step2_text"
+        android:textColor="@color/white"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -162,6 +176,7 @@ the picture with flash"
         app:layout_constraintTop_toBottomOf="@+id/step2"
         app:layout_constraintVertical_bias="1.0" />
 
+<!--    STEP 3 -->
     <TextView
         android:id="@+id/step2"
         android:layout_width="84dp"
@@ -183,14 +198,14 @@ the picture with flash"
 
     <TextView
         android:id="@+id/step3"
-        android:layout_width="85dp"
+        android:layout_width="88dp"
         android:layout_height="36dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="396dp"
         android:fontFamily="@font/qartella_bold"
-        android:text="Step 3"
-        android:textColor="@color/black"
+        android:text="@string/step3_title"
+        android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -208,10 +223,8 @@ the picture with flash"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="324dp"
         android:fontFamily="@font/qartella_regular"
-        android:text="Make sure the picture is sharp
-enough by tapping on the
-pellet via the camera screen"
-        android:textColor="@color/black"
+        android:text="@string/step3_text"
+        android:textColor="@color/white"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -221,7 +234,7 @@ pellet via the camera screen"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/imgstep2"
+        android:id="@+id/imgstep3"
         android:layout_width="120dp"
         android:layout_height="140dp"
         android:layout_marginBottom="464dp"
@@ -257,7 +270,6 @@ pellet via the camera screen"
         app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgstep2" />
-
     <TextView
         android:id="@+id/imgstep4"
         android:layout_width="120dp"
@@ -271,6 +283,23 @@ pellet via the camera screen"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgstep3"
         app:layout_constraintVertical_bias="0.061" />
+
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/qartella_bold"
+        android:text="@string/inst_title"
+        android:textAllCaps="true"
+        android:textColor="#384C71"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/checkBox"

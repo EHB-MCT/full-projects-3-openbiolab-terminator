@@ -8,16 +8,17 @@
     android:background="@drawable/ic_background_wave4">
 
 
-    <!--    bottom nav-->
+    <!--    2 blokken tekts postief/negatief -->
 
     <TextView
+        android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/qartella_bold"
-        android:text="Previous results"
+        android:text="@string/result_title"
         android:textAllCaps="true"
-        android:textColor="@color/black"
+        android:textColor="#384C71"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintHorizontal_bias="0.497"
@@ -25,156 +26,243 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+<!--    Needs translation -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="390dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/buttonblue"
+        android:fontFamily="@font/qartella_bold"
+        android:text="Filter on date"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button3"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/buttonblue"
+        android:fontFamily="@font/qartella_bold"
+        android:text="Filter on today"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button4"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/buttonblue"
+        android:fontFamily="@font/qartella_bold"
+        android:text="Filter on yesterday"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button5"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/buttonblue"
+        android:fontFamily="@font/qartella_bold"
+        android:text="Filter on all"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:id="@+id/whiterect"
-        android:layout_width="328dp"
+        android:id="@+id/whiterect1"
+        android:layout_width="390dp"
         android:layout_height="150dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16" />
+        app:layout_constraintVertical_bias="0.311" />
 
     <TextView
-        android:id="@+id/whiterect4"
-        android:layout_width="328dp"
+        android:id="@+id/whiterect2"
+        android:layout_width="390dp"
         android:layout_height="150dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.404" />
+        app:layout_constraintVertical_bias="0.531" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/address1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="312dp"
+        android:layout_marginBottom="78dp"
         android:fontFamily="@font/qartella_regular"
         android:text="@string/result_addy"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.185" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect1"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect1"
+        app:layout_constraintStart_toStartOf="@+id/whiterect1"
+        app:layout_constraintTop_toTopOf="@+id/whiterect1" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/resultrect"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rectangle_green"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect1"
+        app:layout_constraintStart_toStartOf="@+id/whiterect1"
+        app:layout_constraintTop_toTopOf="@+id/whiterect1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/pos_result"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/resultrect"
+        app:layout_constraintEnd_toEndOf="@+id/resultrect"
+        app:layout_constraintStart_toStartOf="@+id/resultrect"
+        app:layout_constraintTop_toTopOf="@+id/resultrect" />
+
+    <TextView
+        android:id="@+id/date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="334dp"
+        android:layout_marginBottom="107dp"
         android:fontFamily="@font/qartella_regular"
         android:text="@string/result_date"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.137"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.153" />
-
-    <!--    image-->
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/qartella_regular"
-        android:text="@string/pic_result"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.351"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.243" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/imageplaceholder"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.231" />
-
-    <TextView
-        android:id="@+id/date2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/qartella_regular"
-        android:text="@string/result_date"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.36" />
-
-    <TextView
-        android:id="@+id/result2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/qartella_regular"
-        android:text="@string/pic_result"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.353"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect1"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect1"
+        app:layout_constraintStart_toStartOf="@+id/whiterect1"
+        app:layout_constraintTop_toTopOf="@+id/whiterect1" />
 
     <TextView
         android:id="@+id/address2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="312dp"
+        android:layout_marginBottom="78dp"
         android:fontFamily="@font/qartella_regular"
         android:text="@string/result_addy"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.148"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect2"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect2"
+        app:layout_constraintStart_toStartOf="@+id/whiterect2"
+        app:layout_constraintTop_toTopOf="@+id/whiterect2" />
 
-    <!--    image-->
 
     <TextView
-        android:id="@+id/image2"
-        android:layout_width="60dp"
+        android:id="@+id/resultrect2"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/rectangle_red"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect2"
+        app:layout_constraintStart_toStartOf="@+id/whiterect2"
+        app:layout_constraintTop_toTopOf="@+id/whiterect2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/result2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/neg_result"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/resultrect2"
+        app:layout_constraintEnd_toEndOf="@+id/resultrect2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/resultrect2"
+        app:layout_constraintTop_toTopOf="@+id/resultrect2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/date2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="334dp"
+        android:layout_marginBottom="107dp"
+        android:fontFamily="@font/qartella_regular"
+        android:text="@string/result_date"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect2"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect2"
+        app:layout_constraintStart_toStartOf="@+id/whiterect2"
+        app:layout_constraintTop_toTopOf="@+id/whiterect2" />
+
+    <TextView
+        android:id="@+id/navbottom"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:background="@drawable/imageplaceholder"
+        android:background="@drawable/nav_bottom"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/camera"
         android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="4dp"
-        android:background="@drawable/camera"
+        android:layout_height="51dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/camera_blue"
         android:backgroundTint="#384C71"
         android:elevation="2dp"
         android:scaleType="fitCenter"
@@ -185,10 +273,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/boomark"
-        android:layout_width="30dp"
+        android:layout_width="21dp"
         android:layout_height="30dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/bookmark"
+        android:background="@drawable/saved_blue"
         android:backgroundTint="#384C71"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.265"
@@ -200,7 +288,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/info"
+        android:background="@drawable/info_blue_empty"
         android:backgroundTint="#384C71"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.892"
@@ -212,7 +300,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/account"
+        android:background="@drawable/profile_blue_empty"
         android:backgroundTint="#384C71"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.73"
@@ -224,12 +312,13 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/homeicon"
+        android:background="@drawable/home_blue_empty"
         android:backgroundTint="#384C71"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
