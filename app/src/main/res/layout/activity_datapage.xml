@@ -28,7 +28,7 @@
 
 
 <!--    Needs translation -->
-    <androidx.appcompat.widget.AppCompatButton
+     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button2"
         android:layout_width="390dp"
         android:layout_height="62dp"
@@ -38,6 +38,7 @@
         android:text="Filter on date"
         android:textAllCaps="false"
         android:textColor="@color/white"
+         android:gravity="center"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -51,6 +52,7 @@
         android:background="@drawable/buttonblue"
         android:fontFamily="@font/qartella_bold"
         android:text="Filter on today"
+        android:gravity="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="12sp"
@@ -70,6 +72,7 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="12sp"
+        android:gravity="center"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -86,6 +89,7 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="12sp"
+        android:gravity="center"
         app:layout_constraintHorizontal_bias="0.965"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -95,27 +99,25 @@
         android:id="@+id/whiterect1"
         android:layout_width="390dp"
         android:layout_height="150dp"
+        android:layout_marginTop="216dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.311" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/whiterect2"
         android:layout_width="390dp"
         android:layout_height="150dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.531" />
+        app:layout_constraintTop_toBottomOf="@+id/whiterect1" />
 
     <TextView
         android:id="@+id/address1"
@@ -149,20 +151,34 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
+        android:id="@+id/result_ill"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="11dp"
-        android:layout_marginEnd="145dp"
+        android:layout_marginEnd="268dp"
         android:layout_marginBottom="13dp"
-        android:text="@string/pos_result"
-        android:textColor="@color/black"
-        android:textSize="12dp"
+        android:background="@drawable/green_mark"
         app:layout_constraintBottom_toBottomOf="@+id/resultrect"
         app:layout_constraintEnd_toEndOf="@+id/resultrect"
         app:layout_constraintStart_toStartOf="@+id/resultrect"
-        app:layout_constraintTop_toTopOf="@+id/resultrect" />
+        app:layout_constraintTop_toTopOf="@+id/resultrect"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/pos_result"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/resultrect"
+        app:layout_constraintEnd_toEndOf="@+id/resultrect"
+        app:layout_constraintTop_toTopOf="@+id/resultrect"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/date1"
@@ -214,22 +230,37 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
+        android:id="@+id/result_ill2"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/red_mark"
+        app:layout_constraintBottom_toBottomOf="@+id/resultrect2"
+        app:layout_constraintEnd_toEndOf="@+id/resultrect2"
+        app:layout_constraintStart_toStartOf="@+id/resultrect2"
+        app:layout_constraintTop_toTopOf="@+id/resultrect2"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
         android:id="@+id/result2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="46dp"
         android:layout_marginTop="11dp"
-        android:layout_marginEnd="145dp"
+        android:layout_marginEnd="108dp"
         android:layout_marginBottom="13dp"
         android:text="@string/neg_result"
         android:textColor="@color/black"
-        android:textSize="12dp"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/resultrect2"
         app:layout_constraintEnd_toEndOf="@+id/resultrect2"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/resultrect2"
         app:layout_constraintTop_toTopOf="@+id/resultrect2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/date2"
@@ -273,10 +304,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/boomark"
-        android:layout_width="21dp"
-        android:layout_height="30dp"
+        android:layout_width="17.5dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/saved_blue"
+        android:background="@drawable/saved_blue_empty"
         android:backgroundTint="#384C71"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.265"
@@ -285,10 +316,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/info"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/info_blue_empty"
+        android:background="@drawable/info_blue"
         android:backgroundTint="#384C71"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.892"
@@ -297,8 +328,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/profile"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="27dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/profile_blue_empty"
         android:backgroundTint="#384C71"
@@ -309,8 +340,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/home"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/home_blue_empty"
         android:backgroundTint="#384C71"
@@ -318,7 +349,5 @@
         app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
