@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
+import android.widget.ImageView
 import com.chaquo.python.Python
 import com.chaquo.python.android.AndroidPlatform
 
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         /* Goes to steps */
-        val btnGetStarted = findViewById<Button>(R.id.camerahome)
+        val btnGetStarted = findViewById<ImageView>(R.id.camerahome)
         btnGetStarted.setOnClickListener {
             val intent = Intent(this,Steps::class.java)
             startActivity(intent)
