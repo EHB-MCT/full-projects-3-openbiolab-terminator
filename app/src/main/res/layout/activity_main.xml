@@ -24,8 +24,8 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/camerahome"
         android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/camera"
+        android:layout_height="72dp"
+        android:background="@drawable/camera_white"
         android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -36,8 +36,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/boomark"
-        android:layout_width="21dp"
-        android:layout_height="30dp"
+        android:layout_width="17.5dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/saved_white_empty"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,8 +47,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/home"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/home_white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -58,8 +58,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/info"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/info_white_empty"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -69,8 +69,8 @@
 
      <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/profile"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/profile_white_empty"
         app:layout_constraintBottom_toBottomOf="parent"
