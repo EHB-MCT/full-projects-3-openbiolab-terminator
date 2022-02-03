@@ -86,7 +86,7 @@ class Database(context: Context, factory: SQLiteDatabase.CursorFactory?) :
         val ID_COL = "id"
 
         // below is the variable for name column
-        val BGR_COl = "bgr-value"
+        val BGR_COl = "bgrValue"
 
         // below is the variable for age column
         val PIC_COL = "picture"
