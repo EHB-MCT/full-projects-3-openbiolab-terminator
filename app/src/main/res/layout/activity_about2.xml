@@ -87,6 +87,7 @@
        android:textColor="@color/black"
        android:textSize="20sp"
        android:elevation="6dp"
+       android:textStyle="bold"
        app:layout_constraintBottom_toTopOf="@+id/textView14"
        app:layout_constraintEnd_toEndOf="@+id/whiterect"
        app:layout_constraintHorizontal_bias="0.483"

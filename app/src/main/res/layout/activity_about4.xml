@@ -129,6 +129,7 @@
         android:elevation="6dp"
         android:textColor="@color/black"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView16"
         app:layout_constraintEnd_toEndOf="@+id/whiterect3"
         app:layout_constraintStart_toStartOf="@+id/whiterect3"
