@@ -27,11 +27,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <TextView
-        android:id="@+id/textView19"
+    <ImageView
+        android:id="@+id/profilePic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="88dp"
         android:background="@drawable/imageplaceholder"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -42,7 +42,7 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="228dp"
+        android:layout_marginTop="216dp"
         android:fontFamily="@font/qartella_regular"
         android:text="@string/edit_pfp"
         android:textColor="#90000000"
@@ -59,10 +59,161 @@
         android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.582" />
+        app:layout_constraintVertical_bias="0.716" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/qartella_bold"
+        android:text="Name:"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/whiterect"
+        app:layout_constraintTop_toTopOf="@+id/whiterect" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/qartella_regular"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="@+id/whiterect" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/qartella_regular"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:fontFamily="@font/qartella_bold"
+        android:text="Email:"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect"
+        app:layout_constraintStart_toStartOf="@+id/whiterect"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/qartella_regular"
+        android:text="Log in to view your details"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/whiterect"
+        app:layout_constraintTop_toTopOf="@+id/whiterect"
+        app:layout_constraintVertical_bias="0.501" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/qartella_regular"
+        android:text="Log out"
+        android:textColor="#FF0000"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/sign_in_button" />
+
+    <TextView
+        android:id="@+id/dltAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/qartella_regular"
+        android:text="Delete account"
+        android:textColor="#FF0000"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/whiterect"
+        app:layout_constraintEnd_toStartOf="@+id/sign_in_button"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/whiterect" />
+
+    <TextView
+        android:id="@+id/confirmDlt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/qartella_bold"
+        android:text="Are you sure you want to delete your account?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/sign_in_button"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/whiterect"
+        app:layout_constraintTop_toTopOf="@+id/login" />
+
+    <Button
+        android:id="@+id/yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/qartella_bold"
+        android:text="YES"
+        android:textColor="@color/black"
+        android:backgroundTint="#e1ecf3"
+        app:layout_constraintBottom_toTopOf="@+id/dltAcc"
+        app:layout_constraintEnd_toStartOf="@+id/sign_in_button"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="@+id/whiterect"
+        app:layout_constraintTop_toBottomOf="@+id/confirmDlt"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <Button
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/qartella_bold"
+        android:text="NO"
+        android:textColor="@color/black"
+        android:backgroundTint="#e1ecf3"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect"
+        app:layout_constraintStart_toEndOf="@+id/sign_in_button"
+        app:layout_constraintTop_toBottomOf="@+id/confirmDlt" />
 
     <TextView
         android:id="@+id/navbottom"
@@ -133,5 +284,8 @@
         app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

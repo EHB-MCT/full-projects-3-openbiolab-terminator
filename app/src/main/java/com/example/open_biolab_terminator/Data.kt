@@ -19,7 +19,7 @@ class Data : AppCompatActivity() {
         val btnHomePage = findViewById<Button>(R.id.home)
         /* Adds event to id */
         btnHomePage.setOnClickListener {
-            /* Takes you to other page once event (click) has happend */
+            /* Takes you to other page once event (click) has happened */
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
@@ -35,7 +35,7 @@ class Data : AppCompatActivity() {
         /* CHANGE THIS,RESULT TO NEW PROFILE PAGE */
         val btnProfile = findViewById<Button>(R.id.profile)
         btnProfile.setOnClickListener {
-            val intent = Intent(this,Result::class.java)
+            val intent = Intent(this,Profile::class.java)
             startActivity(intent)
         }
 
