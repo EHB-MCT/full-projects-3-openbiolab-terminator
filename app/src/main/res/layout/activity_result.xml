@@ -8,25 +8,25 @@
     android:background="@drawable/ic_background_waves2">
 
     <!-- add string xml for result -->
+
+    <!-- add string xml for result -->
+
+    <!--    bottom nav-->
+
     <TextView
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/qartella_bold"
         android:text="@string/result_title"
         android:textAllCaps="true"
         android:textColor="#384C71"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-<!-- add string xml for result -->
-
-    <!--    bottom nav-->
 
     <TextView
         android:id="@+id/resultrect"
@@ -76,36 +76,24 @@
     <TextView
         android:id="@+id/bluerect"
         android:layout_width="411dp"
-        android:layout_height="550dp"
+        android:layout_height="463dp"
+        android:layout_marginBottom="84dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="#3466C6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="320dp" />
-
-    <TextView
-        android:id="@+id/whiterect"
-        android:layout_width="390dp"
-        android:layout_height="270dp"
-        android:layout_marginTop="161dp"
-        android:background="@drawable/rectangleround"
-        android:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/bluerect" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/qartella_bold"
         android:text="@string/saved_title"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@+id/bluerect" />
@@ -122,10 +110,20 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="15sp"
-        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="@+id/whiterect"
         app:layout_constraintEnd_toEndOf="@+id/whiterect" />
 
+    <TextView
+        android:id="@+id/whiterect"
+        android:layout_width="390dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="161dp"
+        android:background="@drawable/rectangleround"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bluerect" />
 
     <TextView
         android:id="@+id/txtTestValue"
@@ -210,6 +208,27 @@
         app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saved bgr values"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect"
+        app:layout_constraintStart_toStartOf="@+id/whiterect"
+        app:layout_constraintTop_toTopOf="@+id/whiterect" />
+
+    <TextView
+        android:id="@+id/resultDatabaseBGR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/whiterect"
+        app:layout_constraintTop_toTopOf="@+id/whiterect" />
+
+
 
 
 

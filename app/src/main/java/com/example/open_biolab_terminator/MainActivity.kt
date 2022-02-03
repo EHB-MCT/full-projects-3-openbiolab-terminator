@@ -6,8 +6,10 @@ import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
+import android.widget.ImageView
 import com.chaquo.python.Python
 import com.chaquo.python.android.AndroidPlatform
+import pl.droidsonroids.gif.GifImageView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         /* Goes to steps */
-        val btnGetStarted = findViewById<Button>(R.id.camerahome)
+        val btnGetStarted = findViewById<GifImageView>(R.id.camerahome)
         btnGetStarted.setOnClickListener {
             val intent = Intent(this,Steps::class.java)
             startActivity(intent)
@@ -29,7 +31,8 @@ class MainActivity : AppCompatActivity() {
         /* Goes to Profile */
         val btnAccount = findViewById<Button>(R.id.profile)
         btnAccount.setOnClickListener {
-
+            val intent = Intent(this,Profile::class.java)
+            startActivity(intent)
         }
 
         /* Goes to Saved Results */

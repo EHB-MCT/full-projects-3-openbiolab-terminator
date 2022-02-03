@@ -1,5 +1,6 @@
 package com.example.open_biolab_terminator
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +9,7 @@ import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -19,6 +21,7 @@ class Result : AppCompatActivity() {
     private lateinit var imgPath:String
 
 
+    @SuppressLint("Range")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -28,7 +31,24 @@ class Result : AppCompatActivity() {
         bgrValue = extras!!.getString("bgrValue").toString()
         imgPath = extras!!.getString("imgPath").toString()
 
+        val db = Database(this, null)
 
+        // Add result to database
+        db.addResult(bgrValue, imgPath)
+        Toast.makeText(this, bgrValue + " added to local database", Toast.LENGTH_SHORT).show()
+
+        // Show result
+        val results = db.getResult()
+        val resBGR = findViewById<TextView>(R.id.resultDatabaseBGR)
+
+        results!!.moveToFirst()
+        resBGR.append(results.getString(results.getColumnIndex(Database.BGR_COl)) + "\n")
+
+        while(results.moveToNext()){
+            resBGR.append(results.getString(results.getColumnIndex(Database.BGR_COl)) + "\n")
+        }
+
+        results.close()
 
         /* Home Button */
         /* Gets button id */
