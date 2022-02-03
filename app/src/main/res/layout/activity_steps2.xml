@@ -79,6 +79,7 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintLeft_toLeftOf="parent"

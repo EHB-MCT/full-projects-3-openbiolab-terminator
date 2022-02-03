@@ -22,6 +22,8 @@
         <entry key="..\:/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_steps.xml" value="0.21052631578947367" />
         <entry key="..\:/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_steps2.xml" value="0.21052631578947367" />
         <entry key="..\:/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_steps3.xml" value="0.21052631578947367" />
+        <entry key="..\:/Multimedia/2BA/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_camera.xml" value="0.10454155955441302" />
+        <entry key="..\:/Multimedia/2BA/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="..\:/Users/niko-/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/Open-Biolab/android app/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3728205128205128" />
         <entry key="..\:/Users/niko-/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/Open-Biolab/android app/app/src/main/res/drawable/bookmark.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/niko-/OneDrive/Documents/erasmus/2021-2022/Full-projects-III/Open-Biolab/android app/app/src/main/res/drawable/btngetstarted.xml" value="0.37864583333333335" />
@@ -47,7 +49,6 @@
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/account.xml" value="0.3828125" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/backbtn.xml" value="0.3675" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/background.xml" value="0.3828125" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/backgroundhome.xml" value="0.3675" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/backgroundsteps.xml" value="0.3223684210526316" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/bookmark.xml" value="0.3828125" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/btngetstarted.xml" value="0.3828125" />
@@ -55,63 +56,47 @@
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/buttonblue.xml" value="0.3223684210526316" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/buttonwhite.xml" value="0.3828125" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/camera.xml" value="0.3828125" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/camera_blue.xml" value="0.3425" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/camera_illustration.xml" value="0.3675" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/camera_white.xml" value="0.3425" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/camerabutton.xml" value="0.3828125" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/camerashutter.xml" value="0.3828125" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/circle.xml" value="0.3828125" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/home_blue_empty.xml" value="0.3425" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/home_white.xml" value="0.3425" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/homeicon.xml" value="0.3828125" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/homepage.xml" value="0.3223684210526316" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/ic_artboard_1.xml" value="0.18640350877192982" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/ic_asset_9.xml" value="0.3425" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/ic_background_wave4.xml" value="0.18640350877192982" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/ic_background_waves2.xml" value="0.3675" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/ic_background_waves3__1___1_.xml" value="0.3675" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/ic_camera_permission2.xml" value="0.3675" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3223684210526316" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/ic_splash_logo.xml" value="0.3675" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/ic_step3.xml" value="0.3675" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/ic_step4.xml" value="0.3675" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/imageplaceholder.xml" value="0.3828125" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/info.xml" value="0.3828125" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/lichtblauwe_golven.xml" value="0.3425" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/location_illustration.xml" value="0.3675" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/nav_bottom.xml" value="0.1965" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/new_camera_ill.xml" value="0.1965" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/profile_blue_empty.xml" value="0.3425" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/questionmark.xml" value="0.3223684210526316" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/rectangle.xml" value="0.3223684210526316" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/rectangle_blue.xml" value="0.3425" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/rectangle_green.xml" value="0.3425" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/rectangle_red.xml" value="0.3425" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/rectanglebottom.xml" value="0.3223684210526316" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/rectangleround.xml" value="0.3223684210526316" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/rectangletop.xml" value="0.3223684210526316" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/saved_blue_empty.xml" value="0.3425" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/splash_background.xml" value="0.3675" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/splashscreen.xml" value="0.3828125" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/step_1.xml" value="0.3425" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/drawable/step_3.xml" value="0.1965" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_about.xml" value="0.75" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_about2.xml" value="0.5" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_about.xml" value="0.2" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_about2.xml" value="0.22" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_about3.xml" value="0.25" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_about4.xml" value="0.33" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_camera.xml" value="0.25" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_datapage.xml" value="0.25" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_about4.xml" value="0.5" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_camera.xml" value="0.22" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_datapage.xml" value="0.9" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_error.xml" value="0.25" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_instructions.xml" value="0.33" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_login_signup.xml" value="0.33" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_instructions.xml" value="0.25" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_login.xml" value="1.25" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_login_signup.xml" value="0.22" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_loginorsignup.xml" value="0.3087719298245614" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_profile.xml" value="0.33" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_result.xml" value="0.33" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_signup.xml" value="0.33" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_profile.xml" value="0.2" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_result.xml" value="0.9" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_signup.xml" value="0.25" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_splash.xml" value="0.25" />
-        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_steps.xml" value="0.33" />
+        <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_steps.xml" value="0.5" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_steps2.xml" value="0.33" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/activity_steps3.xml" value="0.33" />
         <entry key="..\:/Users/pauwe/Desktop/MULTEC/FP3/full-projects-3-openbiolab-terminator/app/src/main/res/layout/all_steps.xml" value="0.36666666666666664" />

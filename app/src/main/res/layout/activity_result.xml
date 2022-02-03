@@ -39,6 +39,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.243" />
 
+    <TextView
+        android:id="@+id/result_ill3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/green_mark"
+        app:layout_constraintBottom_toBottomOf="@+id/resultrect"
+        app:layout_constraintEnd_toEndOf="@+id/resultrect"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="@+id/resultrect"
+        app:layout_constraintTop_toTopOf="@+id/resultrect"
+        app:layout_constraintVertical_bias="0.608" />
 
     <TextView
         android:id="@+id/result"
@@ -53,7 +68,7 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/resultrect"
         app:layout_constraintEnd_toEndOf="@+id/resultrect"
-        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/resultrect"
         app:layout_constraintTop_toTopOf="@+id/resultrect"
         app:layout_constraintVertical_bias="1.0" />
@@ -65,7 +80,6 @@
         android:layout_marginBottom="84dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="#3466C6"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
@@ -104,10 +118,8 @@
         android:layout_width="390dp"
         android:layout_height="270dp"
         android:layout_marginTop="161dp"
-        android:layout_marginBottom="32dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/bluerect"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
@@ -151,8 +163,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/boomark"
-        android:layout_width="21dp"
-        android:layout_height="30dp"
+        android:layout_width="17.5dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/saved_blue_empty"
         android:backgroundTint="#384C71"
@@ -163,10 +175,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/info"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/info_blue_empty"
+        android:background="@drawable/info_blue"
         android:backgroundTint="#384C71"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.892"
@@ -175,8 +187,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/profile"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="27dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/profile_blue_empty"
         android:backgroundTint="#384C71"
@@ -187,8 +199,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/home"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/home_blue_empty"
         android:backgroundTint="#384C71"
@@ -215,6 +227,7 @@
         android:text=""
         app:layout_constraintStart_toStartOf="@+id/whiterect"
         app:layout_constraintTop_toTopOf="@+id/whiterect" />
+
 
 
 
