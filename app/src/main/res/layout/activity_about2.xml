@@ -175,8 +175,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/boomark"
-        android:layout_width="21dp"
-        android:layout_height="30dp"
+        android:layout_width="17.5dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/saved_blue_empty"
         android:backgroundTint="#384C71"
@@ -187,8 +187,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/info"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/info_blue"
         android:backgroundTint="#384C71"
@@ -199,8 +199,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/profile"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/profile_blue_empty"
         android:backgroundTint="#384C71"
@@ -211,8 +211,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/home"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/home_blue_empty"
         android:backgroundTint="#384C71"

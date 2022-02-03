@@ -95,27 +95,25 @@
         android:id="@+id/whiterect1"
         android:layout_width="390dp"
         android:layout_height="150dp"
+        android:layout_marginTop="216dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.311" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/whiterect2"
         android:layout_width="390dp"
         android:layout_height="150dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.531" />
+        app:layout_constraintTop_toBottomOf="@+id/whiterect1" />
 
     <TextView
         android:id="@+id/address1"
@@ -273,10 +271,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/boomark"
-        android:layout_width="21dp"
-        android:layout_height="30dp"
+        android:layout_width="17.5dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/saved_blue"
+        android:background="@drawable/saved_blue_empty"
         android:backgroundTint="#384C71"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.265"
@@ -285,10 +283,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/info"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/info_blue_empty"
+        android:background="@drawable/info_blue"
         android:backgroundTint="#384C71"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.892"
@@ -297,8 +295,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/profile"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/profile_blue_empty"
         android:backgroundTint="#384C71"
@@ -309,8 +307,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/home"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/home_blue_empty"
         android:backgroundTint="#384C71"
@@ -318,7 +316,5 @@
         app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
