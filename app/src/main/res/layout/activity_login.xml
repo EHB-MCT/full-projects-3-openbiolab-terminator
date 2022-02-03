@@ -37,8 +37,8 @@
 
    <TextView
        android:id="@+id/rectlog1"
-       android:layout_width="245dp"
-       android:layout_height="50dp"
+       android:layout_width="340dp"
+       android:layout_height="40dp"
        android:layout_marginTop="10dp"
        android:layout_marginBottom="436dp"
        android:background="@drawable/rectangle"
@@ -51,8 +51,8 @@
 
    <TextView
        android:id="@+id/rectlog2"
-       android:layout_width="245dp"
-       android:layout_height="50dp"
+       android:layout_width="340dp"
+       android:layout_height="40dp"
        android:layout_marginTop="10dp"
        android:layout_marginBottom="376dp"
        android:background="@drawable/rectangle"
@@ -72,16 +72,17 @@
        android:contentDescription="Email"
        android:ems="10"
        android:fontFamily="@font/qartella_regular"
+       android:gravity=""
        android:inputType="textEmailAddress"
        android:text="Username/Email"
        android:textColor="#90000000"
        android:textSize="20sp"
-       android:gravity=""
        app:layout_constraintBottom_toBottomOf="@+id/rectlog1"
        app:layout_constraintEnd_toEndOf="@+id/rectlog1"
-       app:layout_constraintHorizontal_bias="0.491"
+       app:layout_constraintHorizontal_bias="0.0"
        app:layout_constraintStart_toStartOf="@+id/rectlog1"
-       app:layout_constraintTop_toTopOf="@+id/rectlog1" />
+       app:layout_constraintTop_toTopOf="@+id/rectlog1"
+       app:layout_constraintVertical_bias="0.8" />
 
    <EditText
        android:id="@+id/editTextTextPassword"

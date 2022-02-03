@@ -70,8 +70,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/info"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/info_white_empty"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -81,7 +81,7 @@
 
      <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/profile"
-        android:layout_width="25dp"
+        android:layout_width="27dp"
         android:layout_height="25dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/profile_white_empty"
