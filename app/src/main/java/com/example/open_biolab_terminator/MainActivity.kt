@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
 
        // create all variables
         val btnMoreInfo = findViewById<Button>(R.id.info)
-        val btnGetStarted = findViewById<Button>(R.id.camerahome)
+        val btnGetStarted = findViewById<GifImageView>(R.id.camerahome)
         val btnAccount = findViewById<Button>(R.id.profile)
         val btnSavedResults = findViewById<Button>(R.id.boomark)
         val btnHomePage = findViewById<Button>(R.id.home)
@@ -163,20 +163,21 @@ class MainActivity : AppCompatActivity() {
         val logout = findViewById<TextView>(R.id.logout)
 
 
-
-
         try {
            val account = completedTask.getResult(ApiException::class.java)
 
-            sign_in_button.visibility = View.GONE
-            btnAccount.visibility = View.VISIBLE
-            btnGetStarted.visibility = View.VISIBLE
-            btnSavedResults.visibility = View.VISIBLE
-            btnHomePage.visibility = View.VISIBLE
-            userName.text = "Welcome " + account.displayName
-            userName.visibility = View.VISIBLE
-            btnMoreInfo.visibility = View.VISIBLE
-            logout.visibility = View.VISIBLE
+            if (account != null) {
+                sign_in_button.visibility = View.GONE
+                btnAccount.visibility = View.VISIBLE
+                btnGetStarted.visibility = View.VISIBLE
+                btnSavedResults.visibility = View.VISIBLE
+                btnHomePage.visibility = View.VISIBLE
+                userName.text = "Welcome " + account.displayName
+                userName.visibility = View.VISIBLE
+                btnMoreInfo.visibility = View.VISIBLE
+                logout.visibility = View.VISIBLE
+            }
+
 
 
 
