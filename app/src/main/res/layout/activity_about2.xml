@@ -22,6 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -42,11 +43,12 @@
         android:layout_marginTop="112dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
-        android:elevation="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/whiterect2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        app:layout_constraintVertical_bias="0.781" />
 
     <TextView
         android:id="@+id/whiterect3"
@@ -63,31 +65,35 @@
 
     <TextView
         android:id="@+id/whiterect2"
-        android:layout_width="390dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="324dp"
+        android:layout_width="328dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
-        android:elevation="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/whiterect3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
 
-   <TextView
-       android:id="@+id/textView"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:elevation="6dp"
-       android:fontFamily="@font/qartella_bold"
-       android:text="@string/who"
-       android:textColor="@color/black"
-       android:textSize="20sp"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintLeft_toLeftOf="parent"
-       app:layout_constraintRight_toRightOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.144" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="11dp"
+        android:fontFamily="@font/qartella_regular"
+        android:text="Who are we?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="@+id/whiterect"
+        app:layout_constraintStart_toStartOf="@+id/whiterect"
+        app:layout_constraintTop_toTopOf="@+id/whiterect"
+        app:layout_constraintVertical_bias="1.0" />
+
 
     <TextView
         android:id="@+id/textView14"
@@ -103,26 +109,27 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/whiterect"
         app:layout_constraintEnd_toEndOf="@+id/whiterect"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="@+id/whiterect"
         app:layout_constraintTop_toTopOf="@+id/whiterect"
-        app:layout_constraintVertical_bias="0.215" />
+        app:layout_constraintVertical_bias="0.883" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="111dp"
-        android:layout_marginEnd="111dp"
-        android:layout_marginBottom="15dp"
-        android:elevation="6dp"
+
+        android:layout_marginBottom="28dp"
         android:fontFamily="@font/qartella_regular"
         android:text="@string/how"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/whiterect3"
-        app:layout_constraintEnd_toEndOf="@+id/whiterect3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/whiterect3"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@+id/whiterect3"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -130,28 +137,19 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="75dp"
-        android:elevation="6dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/qartella_regular"
         android:text="@string/what"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/whiterect2"
         app:layout_constraintEnd_toEndOf="@+id/whiterect2"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="@+id/whiterect2"
         app:layout_constraintTop_toTopOf="@+id/whiterect2"
-        app:layout_constraintVertical_bias="0.176" />
-
-    <TextView
-        android:id="@+id/navbottom"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:background="@drawable/nav_bottom"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/camera"

@@ -17,18 +17,10 @@ import androidx.camera.lifecycle.ProcessCameraProvider
 import com.chaquo.python.Python
 import com.chaquo.python.android.AndroidPlatform
 import kotlinx.android.synthetic.main.activity_camera.*
-<<<<<<< Updated upstream
-import kotlinx.android.synthetic.main.activity_result.*
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers.Default
-import kotlinx.coroutines.Dispatchers.IO
-import kotlinx.coroutines.Dispatchers.Main
-=======
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers.Main
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
->>>>>>> Stashed changes
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.*
@@ -62,11 +54,6 @@ class Camera : AppCompatActivity() {
         // Set up the listener for take photo button
         btnImageCapture.setOnClickListener {
             takePhoto()
-<<<<<<< Updated upstream
-            val intent = Intent(this, Result::class.java)
-            intent.putExtra("BGR_Value", BGR_Value)
-            startActivity(intent)
-=======
             suspend fun goToResultPage(){
                 if (bgrValue != null && imgPath != null) {
                     val intent = Intent(this, Result::class.java)
@@ -82,7 +69,6 @@ class Camera : AppCompatActivity() {
             CoroutineScope(Main).launch {
                 goToResultPage()
             }
->>>>>>> Stashed changes
         }
 
         outputDirectory = getOutputDirectory()
@@ -114,25 +100,6 @@ class Camera : AppCompatActivity() {
                     val savedUri = Uri.fromFile(photoFile)
                     imgPath = savedUri
                     print(savedUri.path)
-<<<<<<< Updated upstream
-                    if (! Python.isStarted()) {
-                        Python.start( AndroidPlatform(applicationContext))
-                    }
-
-                    fun OpenCV(savedUri:Uri): String {
-                        val py = Python.getInstance()
-                        val pyObj = py.getModule("color-detection")
-                        val result = (pyObj.callAttr("colorDetection", savedUri.path)).toString()
-                        return result
-                    }
-                    val opencv = OpenCV(savedUri)
-                    val msg = "bgr value: $opencv"
-                    //"Photo capture succeeded: $savedUri "
-                    Toast.makeText(baseContext, msg, Toast.LENGTH_SHORT).show()
-                    Log.d(TAG, msg)
-                    val textTestValue = findViewById<TextView>(R.id.txtTestValue)
-                    BGR_Value = opencv.toString()
-=======
                     val py = Python.getInstance()
                     val pyObj = py.getModule("color-detection")
                     val obj = pyObj.callAttr("colorDetection", savedUri.path)
@@ -142,7 +109,6 @@ class Camera : AppCompatActivity() {
                     Toast.makeText(baseContext, msg, Toast.LENGTH_SHORT).show()
                     Log.d(TAG, msg)
                     bgrValue = obj.toString()
->>>>>>> Stashed changes
 
                 }
             })

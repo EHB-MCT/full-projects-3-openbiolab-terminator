@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/ic_background_wave4">
+    android:background="@drawable/ic_background_wave4"
+    tools:context=".MainActivity">
 
 
     <!--    bottom nav-->
@@ -38,16 +38,17 @@
 
     <TextView
         android:id="@+id/whiterect"
-        android:layout_width="390dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="112dp"
+        android:layout_width="328dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="7dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
-        android:elevation="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/whiterect2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.892" />
 
     <TextView
         android:id="@+id/whiterect3"
@@ -69,11 +70,12 @@
         android:layout_marginTop="184dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="@color/white"
-        android:elevation="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/whiterect3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945" />
 
     <TextView
         android:id="@+id/textView9"
@@ -87,21 +89,19 @@
         android:text="@string/what"
         android:textColor="@color/black"
         android:textSize="20sp"
-        android:elevation="6dp"
-        app:layout_constraintBottom_toBottomOf="@+id/whiterect2"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
         app:layout_constraintEnd_toEndOf="@+id/whiterect2"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="@+id/whiterect2"
-        app:layout_constraintTop_toTopOf="@+id/whiterect2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/whiterect2" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="61dp"
-        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="16dp"
         android:fontFamily="@font/qartella_regular"
         android:text="@string/whatdowedo"
         android:textColor="@color/black"
@@ -109,27 +109,28 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/whiterect2"
         app:layout_constraintEnd_toEndOf="@+id/whiterect2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/whiterect2"
-        app:layout_constraintTop_toTopOf="@+id/whiterect2"
-        app:layout_constraintVertical_bias="0.166" />
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/whiterect2" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="31dp"
         android:fontFamily="@font/qartella_regular"
         android:text="@string/who"
         android:textColor="@color/black"
         android:textSize="20sp"
-        android:elevation="6dp"
         app:layout_constraintBottom_toBottomOf="@+id/whiterect"
         app:layout_constraintEnd_toEndOf="@+id/whiterect"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/whiterect"
         app:layout_constraintTop_toTopOf="@+id/whiterect"
-        app:layout_constraintVertical_bias="0.143" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView10"
@@ -143,19 +144,13 @@
         android:text="@string/how"
         android:textColor="@color/black"
         android:textSize="20sp"
-        android:elevation="6dp"
         app:layout_constraintBottom_toBottomOf="@+id/whiterect3"
         app:layout_constraintEnd_toEndOf="@+id/whiterect3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="@+id/whiterect3"
-        app:layout_constraintTop_toTopOf="@+id/whiterect3" />
-
-    <TextView
-        android:id="@+id/navbottom"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:background="@drawable/nav_bottom"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/whiterect3"
+        app:layout_constraintVertical_bias="0.537" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/camera"

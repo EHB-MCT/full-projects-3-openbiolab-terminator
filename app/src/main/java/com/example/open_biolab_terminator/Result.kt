@@ -20,11 +20,13 @@ class Result : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_result)
+        var extras = intent.extras
+        bgrValue = extras!!.getString("bgrValue").toString()
+        imgPath = extras!!.getString("imgPath").toString()
 
 
 
