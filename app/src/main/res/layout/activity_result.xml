@@ -77,12 +77,13 @@
         android:id="@+id/bluerect"
         android:layout_width="411dp"
         android:layout_height="463dp"
-        android:layout_marginBottom="84dp"
         android:background="@drawable/rectangleround"
         android:backgroundTint="#3466C6"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
     <TextView
         android:layout_width="wrap_content"
