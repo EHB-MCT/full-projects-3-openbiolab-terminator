@@ -31,7 +31,8 @@ class MainActivity : AppCompatActivity() {
         /* Goes to Profile */
         val btnAccount = findViewById<Button>(R.id.profile)
         btnAccount.setOnClickListener {
-
+            val intent = Intent(this,Profile::class.java)
+            startActivity(intent)
         }
 
         /* Goes to Saved Results */
