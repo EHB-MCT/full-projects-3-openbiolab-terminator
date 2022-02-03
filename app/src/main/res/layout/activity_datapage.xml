@@ -151,20 +151,34 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
+        android:id="@+id/result_ill"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/green_mark"
+        app:layout_constraintBottom_toBottomOf="@+id/resultrect"
+        app:layout_constraintEnd_toEndOf="@+id/resultrect"
+        app:layout_constraintStart_toStartOf="@+id/resultrect"
+        app:layout_constraintTop_toTopOf="@+id/resultrect"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
         android:layout_marginTop="11dp"
-        android:layout_marginEnd="145dp"
+        android:layout_marginEnd="132dp"
         android:layout_marginBottom="13dp"
         android:text="@string/pos_result"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/resultrect"
         app:layout_constraintEnd_toEndOf="@+id/resultrect"
-        app:layout_constraintStart_toStartOf="@+id/resultrect"
-        app:layout_constraintTop_toTopOf="@+id/resultrect" />
+        app:layout_constraintTop_toTopOf="@+id/resultrect"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/date1"
@@ -216,22 +230,37 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
+        android:id="@+id/result_ill2"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/red_mark"
+        app:layout_constraintBottom_toBottomOf="@+id/resultrect2"
+        app:layout_constraintEnd_toEndOf="@+id/resultrect2"
+        app:layout_constraintStart_toStartOf="@+id/resultrect2"
+        app:layout_constraintTop_toTopOf="@+id/resultrect2"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
         android:id="@+id/result2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="46dp"
         android:layout_marginTop="11dp"
-        android:layout_marginEnd="145dp"
+        android:layout_marginEnd="108dp"
         android:layout_marginBottom="13dp"
         android:text="@string/neg_result"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/resultrect2"
         app:layout_constraintEnd_toEndOf="@+id/resultrect2"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/resultrect2"
         app:layout_constraintTop_toTopOf="@+id/resultrect2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/date2"

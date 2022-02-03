@@ -39,6 +39,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.243" />
 
+    <TextView
+        android:id="@+id/result_ill3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/green_mark"
+        app:layout_constraintBottom_toBottomOf="@+id/resultrect"
+        app:layout_constraintEnd_toEndOf="@+id/resultrect"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="@+id/resultrect"
+        app:layout_constraintTop_toTopOf="@+id/resultrect"
+        app:layout_constraintVertical_bias="0.608" />
 
     <TextView
         android:id="@+id/result"
@@ -53,7 +68,7 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/resultrect"
         app:layout_constraintEnd_toEndOf="@+id/resultrect"
-        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/resultrect"
         app:layout_constraintTop_toTopOf="@+id/resultrect"
         app:layout_constraintVertical_bias="1.0" />
