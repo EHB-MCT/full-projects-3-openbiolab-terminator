@@ -43,15 +43,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val db = Firebase.firestore
-
-        val testUpdate = db.collection("sample").document("test")
-
-
-        testUpdate
-            .update("sample name", "id2")
-            .addOnSuccessListener { Log.d(TAG, "DocumentSnapshot successfully updated!") }
-            .addOnFailureListener { e -> Log.w(TAG, "Error updating document", e) }
 
 
        // create all variables
