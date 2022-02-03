@@ -18,15 +18,11 @@ import com.google.android.gms.common.SignInButton
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.gms.tasks.Task
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.GoogleAuthProvider
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_main.*
 
 
 const val RC_SIGN_IN = 0
-private lateinit var auth: FirebaseAuth
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,8 +30,6 @@ class MainActivity : AppCompatActivity() {
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_main)
-
-
 
 
        // create all variables
@@ -46,10 +40,6 @@ class MainActivity : AppCompatActivity() {
         val btnHomePage = findViewById<Button>(R.id.home)
         val userName = findViewById<TextView>(R.id.welcome_user)
         val logout = findViewById<TextView>(R.id.logout)
-
-
-        // Initialize Firebase Auth
-        auth = Firebase.auth
 
 
         // set all visibilities
@@ -70,7 +60,6 @@ class MainActivity : AppCompatActivity() {
 
         val gso = GoogleSignInOptions
             .Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken(getString(R.string.default_web_client_id_2))
             .requestEmail()
             .build()
 
@@ -118,7 +107,6 @@ class MainActivity : AppCompatActivity() {
 
                 })
 
-            Firebase.auth.signOut()
         }
 
 
@@ -171,8 +159,6 @@ class MainActivity : AppCompatActivity() {
         val logout = findViewById<TextView>(R.id.logout)
 
 
-
-
         try {
            val account = completedTask.getResult(ApiException::class.java)
 
@@ -186,9 +172,6 @@ class MainActivity : AppCompatActivity() {
             btnMoreInfo.visibility = View.VISIBLE
             logout.visibility = View.VISIBLE
 
-            val id = account.idToken
-            firebaseAuthWithGoogle(id.toString())
-
 
         } catch (e: ApiException) {
             // The ApiException status code indicates the detailed failure reason.
@@ -199,68 +182,4 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    override fun onStart() {
-
-        val btnMoreInfo = findViewById<Button>(R.id.info)
-        val btnGetStarted = findViewById<Button>(R.id.camerahome)
-        val btnAccount = findViewById<Button>(R.id.profile)
-        val btnSavedResults = findViewById<Button>(R.id.boomark)
-        val btnHomePage = findViewById<Button>(R.id.home)
-        val userName = findViewById<TextView>(R.id.welcome_user)
-        val logout = findViewById<TextView>(R.id.logout)
-
-        super.onStart()
-        // Check if user is signed in (non-null) and update UI accordingly.
-        var currentUser = auth.getCurrentUser()
-
-        if (currentUser != null) {
-            sign_in_button.visibility = View.GONE
-            btnAccount.visibility = View.VISIBLE
-            btnGetStarted.visibility = View.VISIBLE
-            btnSavedResults.visibility = View.VISIBLE
-            btnHomePage.visibility = View.VISIBLE
-            userName.text = "Welcome " + currentUser.displayName
-            userName.visibility = View.VISIBLE
-            btnMoreInfo.visibility = View.VISIBLE
-            logout.visibility = View.VISIBLE
-        }
-
-    }
-
-    private fun firebaseAuthWithGoogle(idToken: String) {
-
-        val btnMoreInfo = findViewById<Button>(R.id.info)
-        val btnGetStarted = findViewById<Button>(R.id.camerahome)
-        val btnAccount = findViewById<Button>(R.id.profile)
-        val btnSavedResults = findViewById<Button>(R.id.boomark)
-        val btnHomePage = findViewById<Button>(R.id.home)
-        val userName = findViewById<TextView>(R.id.welcome_user)
-        val logout = findViewById<TextView>(R.id.logout)
-
-        val credential = GoogleAuthProvider.getCredential(idToken, null)
-        auth.signInWithCredential(credential)
-            .addOnCompleteListener(this) { task ->
-                if (task.isSuccessful) {
-                    // Sign in success, update UI with the signed-in user's information
-                    Log.d(TAG, "signInWithCredential:success")
-                    val user = auth.currentUser
-                    if (user != null){
-                        sign_in_button.visibility = View.GONE
-                        btnAccount.visibility = View.VISIBLE
-                        btnGetStarted.visibility = View.VISIBLE
-                        btnSavedResults.visibility = View.VISIBLE
-                        btnHomePage.visibility = View.VISIBLE
-                        userName.text = "Welcome " + user.displayName
-                        userName.visibility = View.VISIBLE
-                        btnMoreInfo.visibility = View.VISIBLE
-                        logout.visibility = View.VISIBLE
-                    }
-
-                } else {
-                    // If sign in fails, display a message to the user.
-                    Log.w(TAG, "signInWithCredential:failure", task.exception)
-
-                }
-            }
-    }
 }
