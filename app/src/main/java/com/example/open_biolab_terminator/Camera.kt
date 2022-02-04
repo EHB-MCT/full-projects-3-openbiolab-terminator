@@ -45,6 +45,7 @@ class Camera : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        supportActionBar?.hide()
         setContentView(R.layout.activity_camera)
 
         // Request camera permissions
@@ -144,8 +145,12 @@ class Camera : AppCompatActivity() {
                 cameraProvider.unbindAll()
 
                 // Bind use cases to camera
-                cameraProvider.bindToLifecycle(
+                val cam = cameraProvider.bindToLifecycle(
                     this, cameraSelector, preview, imageCapture)
+
+                if (cam.cameraInfo.hasFlashUnit()){
+                    cam.cameraControl.enableTorch(true)
+                }
 
             } catch(exc: Exception) {
                 Log.e(TAG, "Use case binding failed", exc)

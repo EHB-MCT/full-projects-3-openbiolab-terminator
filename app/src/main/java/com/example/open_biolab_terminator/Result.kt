@@ -26,29 +26,16 @@ class Result : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        supportActionBar?.hide()
         setContentView(R.layout.activity_result)
         var extras = intent.extras
         bgrValue = extras!!.getString("bgrValue").toString()
         imgPath = extras!!.getString("imgPath").toString()
 
-        val db = Database(this, null)
 
-        // Add result to database
-        db.addResult(bgrValue, imgPath)
-        Toast.makeText(this, bgrValue + " added to local database", Toast.LENGTH_SHORT).show()
-
-        // Show result
-        val results = db.getResult()
         val resBGR = findViewById<TextView>(R.id.resultDatabaseBGR)
+        resBGR.setText("BGR Value: $bgrValue" )
 
-        results!!.moveToFirst()
-        resBGR.append(results.getString(results.getColumnIndex(Database.BGR_COl)) + "\n")
-
-        while(results.moveToNext()){
-            resBGR.append(results.getString(results.getColumnIndex(Database.BGR_COl)) + "\n")
-        }
-
-        results.close()
 
         /* Home Button */
         /* Gets button id */
@@ -85,6 +72,19 @@ class Result : AppCompatActivity() {
         val btnMoreInfo = findViewById<Button>(R.id.info)
         btnMoreInfo.setOnClickListener {
             val intent = Intent(this,About::class.java)
+            startActivity(intent)
+        }
+
+        val btnsubmit = findViewById<Button>(R.id.btnSubmit)
+        btnsubmit.setOnClickListener {
+            val db = Database(this, null)
+
+            // Add result to database
+            db.addResult(bgrValue.toString(), imgPath)
+            Toast.makeText(this, bgrValue.toString() + " added to local database", Toast.LENGTH_SHORT).show()
+            val results = db.getResult()
+            results?.close()
+            val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
 
